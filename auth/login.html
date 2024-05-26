@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/fonts/font.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/tailwind.config.js"></script>
+  <title>Thinswap Login</title>
+</head>
+<body>
+  <div class="min-h-screen grid md:grid-cols-2">
+    <div class="flex flex-col justify-between text-white bg-brand-blue-500 px-5 lg:px-10 xl:px-16">
+      <!-- logo -->
+      <a href="#" class="inline-block py-3 xl:py-6">
+        <img src="../assets/img/logo-white.svg" alt="Logo">
+      </a>
+      <div>
+        <div class="max-w-64 xl:max-w-80 w-full aspect-square"> 
+          <img class="size-full object-contain" src="../assets/img/digital-learning.png" alt="digital-learning">
+        </div>
+        <h2 class="max-w-lg font-bold text-2xl xl:text-4xl mt-7">
+          Welcome to the best <span class="text-brand-blue-400">study guide</span> in Australia
+        </h2>
+        <p class="xl:text-lg opacity-70 mt-3.5">
+          Let's complete a few simple steps to get your account fully setup and running.
+        </p>
+      </div>  
+      <!--  -->
+      <p class="opacity-50 py-3 xl:py-6"> © 2023 Thinkswap</p>
+    </div>
+    <div class="flex items-center justify-center bg-brand-gray-300 p-5 lg:p-10 xl:px-24 xl:py-20">
+      <form class="w-full">
+        <h2 class="font-bold text-2xl xl:text-display-3xl">Login your account</h2>
+        <p class="max-w-md text-brand-blue-500/70 xl:text-lg mt-2.5">Let's complete a few simple steps to get your account fully setup and running.</p>
+        <div class="space-y-3 lg:space-y-5 mt-5 lg:mt-9">
+          <!-- Email/ Username -->
+          <div class="space-y-1.5 xl:space-y-2.5">
+            <label for="first_name" class="block text-sm xl:text-base">Email/ Username</label>
+            <input type="text" id="first_name" class="block w-full text-sm xl:text-lg text-brand-blue-500 rounded-lg bg-white border border-brand-blue-500/5 focus:border-brand-blue-400 placeholder:text-brand-blue-500/50 p-2.5 xl:p-4" placeholder="Email / Username" />
+          </div>
+          <!-- Password -->
+          <div class="relative password-one space-y-1.5 xl:space-y-2.5">
+            <label for="Password" class="block text-sm xl:text-base">Password</label>
+            <input type="password" id="Password" class="block w-full text-sm xl:text-lg text-brand-blue-500 rounded-lg bg-white border border-brand-blue-500/5 focus:border-brand-blue-400 placeholder:text-brand-blue-500/50 p-2.5 xl:p-4" placeholder="Enter your password" />
+
+            <button type="button" class="absolute right-4 top-8 xl:top-12 lg:mt-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 hidden">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+              </svg>              
+            </button>
+          </div>
+
+          <!--checkbox  -->
+          <div class="flex items-center gap-2">
+            <div class="flex items-center">
+              <input checked id="checked-checkbox" type="checkbox" class="size-5 text-blue-600 border-brand-blue-500/5 rounded-md">
+              <label for="checked-checkbox" class="text-brand-blue-500 ms-2">Remember Me</label>
+          </div>
+            <a href="#" class="font-medium xl:text-lg/5 text-brand-blue-600 border-b border-brand-blue-400 pb-px ml-auto">
+              Forgot Password?
+            </a>
+          </div>
+          
+          <!-- login btn -->
+          <button type="submit" class="w-full xl:text-lg text-white bg-base rounded-lg p-2.5 xl:p-4">Login</button>
+          <div class="flex items-center justify-between space-x-4 py-2.5">
+            <hr class="inline-block bg-brand-blue-500 h-px w-full">
+            <p class="font-medium whitespace-nowrap text-brand-gray-500 tracking-wide">Or login with</p>
+            <hr class="inline-block bg-brand-blue-500 h-px w-full">
+          </div>
+
+          <!-- Enter with Google or Apple -->
+          <div class="grid grid-cols-2 font-medium gap-4">
+            <!-- google -->
+            <a href="#" class="flex items-center justify-center border border-brand-gray-400 rounded-lg gap-3 p-2 lg:p-3.5" target="_blank" rel="noopener noreferrer">
+              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.3758 11.2137C21.3758 10.4224 21.3103 9.84485 21.1685 9.24597H11.9473V12.8179H17.3599C17.2508 13.7055 16.6615 15.0424 15.352 15.9406L15.3336 16.0602L18.2492 18.2737L18.4512 18.2935C20.3063 16.6144 21.3758 14.144 21.3758 11.2137Z" fill="#4285F4"/>
+                <path d="M11.9467 20.625C14.5984 20.625 16.8245 19.7694 18.4506 18.2936L15.3514 15.9408C14.522 16.5076 13.4089 16.9033 11.9467 16.9033C9.34946 16.9033 7.14512 15.2243 6.35933 12.9036L6.24415 12.9131L3.2125 15.2125L3.17285 15.3205C4.78791 18.4647 8.10536 20.625 11.9467 20.625Z" fill="#34A853"/>
+                <path d="M6.36006 12.9036C6.15272 12.3047 6.03273 11.663 6.03273 11C6.03273 10.3369 6.15272 9.69524 6.34915 9.09636L6.34366 8.96881L3.274 6.63257L3.17357 6.67938C2.50792 7.98412 2.12598 9.44929 2.12598 11C2.12598 12.5507 2.50792 14.0158 3.17357 15.3205L6.36006 12.9036Z" fill="#FBBC05"/>
+                <path d="M11.9467 5.09664C13.7909 5.09664 15.0349 5.87733 15.7443 6.52974L18.5161 3.8775C16.8138 2.32681 14.5985 1.375 11.9467 1.375C8.10539 1.375 4.78792 3.53526 3.17285 6.6794L6.34844 9.09638C7.14514 6.77569 9.34949 5.09664 11.9467 5.09664Z" fill="#EB4335"/>
+                </svg>
+              <span>Google</span>                
+            </a>
+            <!-- apple -->
+            <a href="#" class="flex items-center justify-center border border-brand-gray-400 rounded-lg gap-3 p-2 lg:p-3.5" target="_blank" rel="noopener noreferrer">
+              <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6244 7.50391C19.5153 7.56519 16.9172 8.85841 16.9172 11.7258C17.0397 14.9959 20.1959 16.1427 20.25 16.1427C20.1959 16.2039 19.7735 17.7049 18.5224 19.2783C17.5295 20.6336 16.4275 22 14.754 22C13.1621 22 12.5907 21.0967 10.754 21.0967C8.78147 21.0967 8.22335 22 6.71314 22C5.03967 22 3.85599 20.5603 2.80896 19.2178C1.44871 17.4606 0.29254 14.703 0.251723 12.0553C0.224217 10.6522 0.524128 9.27304 1.28544 8.10158C2.35998 6.46614 4.27835 5.35595 6.3733 5.31935C7.97845 5.2708 9.40703 6.30777 10.3866 6.30777C11.3254 6.30777 13.0805 5.31935 15.0663 5.31935C15.9235 5.32014 18.2092 5.55173 19.6244 7.50391ZM10.2509 5.03921C9.96515 3.75792 10.754 2.47663 11.4887 1.65931C12.4274 0.670887 13.9101 0 15.1888 0C15.2704 1.28129 14.7531 2.53791 13.8285 3.45312C12.9989 4.44154 11.5703 5.18565 10.2509 5.03921Z" fill="#111827"/>
+                </svg>
+                
+              <span>Apple</span>                
+            </a>
+          </div>
+
+          <!-- You’re new in here? Create Account -->
+          <p class="text-sm text-brand-gray-500 text-center">
+            You’re new in here? 
+            <a href="register.html" class="font-semibold text-brand-blue-400">Create Account</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="/scripts/app.js"></script>
+</body>
+</html>
+
+

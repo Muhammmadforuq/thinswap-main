@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'sf-ui-display';
+    font-weight: 100;
+    src: url('../fonts/sf-ui-display-ultralight.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'sf-ui-display';
+    font-weight: 200;
+    src: url('../fonts/sf-ui-display-thin.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'sf-ui-display';
+    font-weight: 300;
+    src: url('../fonts/sf-ui-display-light.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'sf-ui-display';
+    font-weight: 400;
+    src: url('../fonts/sf-ui-display-medium.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'sf-ui-display';
+    font-weight: 500;
+    src: url('../fonts/sf-ui-display-semibold.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'sf-ui-display';
+    font-weight: 600;
+    src: url('../fonts/sf-ui-display-bold.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'sf-ui-display';
+    font-weight: 700;
+    src: url('../fonts/sf-ui-display-heavy.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'sf-ui-display';
+    font-weight: 800;
+    src: url('../fonts/sf-ui-display-black.otf') format('opentype');
+  }
+  
+
+  @font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

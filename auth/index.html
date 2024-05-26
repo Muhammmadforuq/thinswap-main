@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/fonts/font.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/tailwind.config.js"></script>
+  <title>Thinswap Milestone 3</title>
+</head>
+<body class="relative">
+  <header class="md:absolute md:top-0 md:left-0 md:w-1/2 flex md:block items-center justify-end gap-4 px-4 md:px-0">
+    <!-- logo -->
+    <a href="#" class="block md:mx-4 lg:mx-10 xl:mx-16 bg-white py-2 xl:py-3.5 mr-auto">
+      <img src="../assets/img/logo.svg" alt="Logo">
+    </a>
+    <!-- search -->
+    <button type="button" class="md:hidden">
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21.0122 21.8651L15.0122 15.8651M17.0122 10.8651C17.0122 11.7843 16.8311 12.6946 16.4794 13.5439C16.1276 14.3931 15.612 15.1648 14.962 15.8148C14.3119 16.4648 13.5403 16.9805 12.691 17.3322C11.8417 17.684 10.9315 17.8651 10.0122 17.8651C9.09295 17.8651 8.1827 17.684 7.33342 17.3322C6.48414 16.9805 5.71247 16.4648 5.06246 15.8148C4.41245 15.1648 3.89683 14.3931 3.54505 13.5439C3.19327 12.6946 3.01221 11.7843 3.01221 10.8651C3.01221 9.00857 3.7497 7.22809 5.06246 5.91533C6.37521 4.60258 8.15569 3.86508 10.0122 3.86508C11.8687 3.86508 13.6492 4.60258 14.962 5.91533C16.2747 7.22809 17.0122 9.00857 17.0122 10.8651Z" stroke="black" stroke-width="2.44444" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        
+    </button>
+    <!-- menu btn -->
+    <button type="button" class="md:hidden">
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.01221 4.86503H21.0122V6.86503H3.01221V4.86503ZM9.01221 11.865H21.0122V13.865H9.01221V11.865ZM3.01221 18.865H21.0122V20.865H3.01221V18.865Z" fill="black"/>
+        </svg>        
+    </button>
+  </header>
+  <main class="min-h-screen grid md:grid-cols-2"> 
+    <div class="bg-brand-gray-100 px-4 lg:px-10 xl:px-16 pt-12 pb-8 md:py-24 lg:py-32 xl:py-48">
+      <!-- steps --> 
+      <h1 class="font-bold text-3xl xl:text-5xl/tight text-brand-blue-500">Thinkswap helps <br> students;</h1>
+      <p class="max-w-md text-sm xl:text-lg mt-3 xl:mt-6">
+        Let's complete a few simple steps to get your account fully setup and running.
+      </p>
+
+      <!-- progess bars -->
+      <div class="flex flex-col md:flex-row items-start gap-4 mt-4 xl:mt-8">
+        <div class="relative flex flex-row md:flex-col">
+          <!-- 1 -->
+          <button type="button" class="dot-style dots relative z-10 size-8 rounded-full p-1">
+            <span class="relative block size-full bg-white rounded-full"></span>
+          </button>
+
+          <!-- 2 -->
+          <button type="button" class="dots relative z-10 size-8 bg-brand-blue-500/25 rounded-full p-1 ml-52 md:ml-0 md:mt-20 xl:mt-24">
+            <span class="relative block size-full bg-white rounded-full"></span>
+          </button>
+
+          <!-- 3 -->
+          <button type="button" class="dots relative z-10 size-8 bg-brand-blue-500/25 rounded-full p-1 ml-10 md:ml-auto md:mt-10 xl:mt-14">
+            <span class="relative block size-full bg-white rounded-full"></span>
+          </button>
+
+          <div class="absolute left-1/2 -translate-x-1/2 w-full md:w-1 h-1 md:h-full top-1/2 md:top-0 bg-brand-blue-500/25"></div>
+
+        </div>
+
+        <div>
+          <div class="space-y-1.5">
+            <h3 class="font-bold text-2xl/7">Welcome</h3>
+            <p class="welcome-text text-brand-gray-200 text-sm xl:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+          </div>
+          <h3 class="font-bold text-2xl/7 mt-5 lg:mt-10 xl:mt-12 hidden md:block">Study Preference</h3>
+          <div class="space-y-1.5 mt-10 xl:mt-14 hidden md:block">
+            <h3 class="font-bold text-2xl/7 pt-0.5">Finish</h3>
+            <p class="finish-text hidden text-brand-gray-200 text-sm xl:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Skip This Step -->
+      <button type="button" class="w-full md:w-auto font-medium bg-base rounded-lg p-0.5 mt-8">
+        <span class="block md:inline-block bg-white py-1.5 px-7 rounded-lg">
+          <span class="inline-block bg-clip-text bg-base text-transparent">Skip This Step</span>
+        </span>
+      </button>
+    </div>
+    <div class="flex items-center justify-center bg-brand-blue-500 px-4 lg:px-10 xl:px-24 py-10 md:py-16 xl:py-28">
+        <div class="multi-prosgess bg-brand-gray-50 rounded-2xl xl:rounded-3xl">
+          <!-- 1 -->
+          <div class="steps active px-4 py-10 xl:py-14 lg:px-7">
+            <div class="text-brand-blue-500 space-y-3 xl:space-y-6">
+              <h2 class="font-bold text-2xl/7 xl:text-display-3xl">Welcome to the library you'll actually use.</h2>
+              <p>Get started with our amazing documents in just 30 seconds!</p>
+            </div>
+    
+            <div class="space-y-5 mt-6 xl:mt-12">
+              <!-- 1 -->
+              <div class="flex items-start space-x-3">
+                <div class="size-10 xl:size-14 shrink-0">
+                  <img class="size-full object-contain" src="../assets/img/find.svg" alt="Find Icon">
+                </div>
+                <div class="max-w-sm w-full">
+                  <h3 class="font-roboto font-bold text-xl">Find</h3>
+                  <p class="text-brand-gray-200 text-sm lg:text-base">Search for over 200,000 study notes and past assignments!</p>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="flex items-start space-x-3">
+                <div class="size-10 xl:size-14 shrink-0">
+                  <img class="size-full object-contain" src="../assets/img/swap.svg" alt="Swap Icon">
+                </div>
+                <div class="max-w-sm w-full">
+                  <h3 class="font-roboto font-bold text-xl">Swap</h3>
+                  <p class="text-brand-gray-200 text-sm lg:text-base">You can download study resources by swapping your own or purchasing Exchange Credits.</p>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="flex items-start space-x-3">
+                <div class="size-10 xl:size-14 shrink-0">
+                  <img class="size-full object-contain" src="../assets/img/study.svg" alt="Study Icon">
+                </div>
+                <div class="max-w-sm w-full">
+                  <h3 class="font-roboto font-bold text-xl">Study</h3>
+                  <p class="text-brand-gray-200 text-sm lg:text-base">Access your library anywhere, anytime.</p>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="steps py-10 lg:py-14 px-4 lg:px-7">
+            <div class="text-brand-blue-500 space-y-3 xl:space-y-6">
+              <h2 class="font-bold text-2xl/7 xl:text-display-3xl">Select your study preference</h2>
+              <p>Hold Tight! After you select your subjects we will show you awesome documents tailored to you!</p>
+            </div>
+    
+            <form class="space-y-4 mt-4 xl:mt-8">
+              <!-- Country -->
+              <div class="space-y-2">
+                <label class="flex items-center" for="countries">
+                  <span>Country</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.00001 12.8337C3.77834 12.8337 1.16667 10.222 1.16667 7.00033C1.16667 3.77866 3.77834 1.16699 7.00001 1.16699C10.2216 1.16699 12.8333 3.77866 12.8333 7.00033C12.8333 10.222 10.2216 12.8337 7.00001 12.8337ZM7.00001 11.667C9.57735 11.667 11.6667 9.57767 11.6667 7.00033C11.6667 4.423 9.57735 2.33366 7.00001 2.33366C4.42268 2.33366 2.33334 4.423 2.33334 7.00033C2.33334 9.57767 4.42268 11.667 7.00001 11.667ZM6.41667 4.08366H7.58334V5.25033H6.41667V4.08366ZM6.41667 6.41699H7.58334V9.91699H6.41667V6.41699Z" fill="url(#paint0_linear_1154_949)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_1154_949" x1="0.179492" y1="7.00033" x2="14.359" y2="7.00033" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#457EF8"/>
+                    <stop offset="1" stop-color="#5E69DF"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>
+                </label>
+                <select id="countries" class="bg-white border border-brand-blue-500/25 text-brand-blue-500/50 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                  <option selected disabled>Select Country</option>
+                  <option value="US">United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="FR">France</option>
+                  <option value="DE">Germany</option>
+                </select>
+              </div>
+              
+              <!-- Study Type -->
+              <div class="space-y-2">
+                <label class="flex items-center" for="studyType">
+                  <span>Study Type</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.00001 12.8337C3.77834 12.8337 1.16667 10.222 1.16667 7.00033C1.16667 3.77866 3.77834 1.16699 7.00001 1.16699C10.2216 1.16699 12.8333 3.77866 12.8333 7.00033C12.8333 10.222 10.2216 12.8337 7.00001 12.8337ZM7.00001 11.667C9.57735 11.667 11.6667 9.57767 11.6667 7.00033C11.6667 4.423 9.57735 2.33366 7.00001 2.33366C4.42268 2.33366 2.33334 4.423 2.33334 7.00033C2.33334 9.57767 4.42268 11.667 7.00001 11.667ZM6.41667 4.08366H7.58334V5.25033H6.41667V4.08366ZM6.41667 6.41699H7.58334V9.91699H6.41667V6.41699Z" fill="url(#paint0_linear_1154_949)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_1154_949" x1="0.179492" y1="7.00033" x2="14.359" y2="7.00033" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#457EF8"/>
+                    <stop offset="1" stop-color="#5E69DF"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>
+                </label>
+                <select id="studyType" class="bg-white border border-brand-blue-500/25 text-brand-blue-500/50 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                  <option selected disabled>Select Study Type</option>
+                  <option value="m-a"> Meta-analysis</option>
+                  <option value="s-r">Systematic review</option>
+                  <option value="r-c-t">Randomized controlled trial</option>
+                  <option value="c-s">Cohort study</option>
+                </select>
+              </div>
+
+              <!-- Studies -->
+              <div class="space-y-2">
+                <label class="flex items-center" for="Studies">
+                  <span>Studies</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.00001 12.8337C3.77834 12.8337 1.16667 10.222 1.16667 7.00033C1.16667 3.77866 3.77834 1.16699 7.00001 1.16699C10.2216 1.16699 12.8333 3.77866 12.8333 7.00033C12.8333 10.222 10.2216 12.8337 7.00001 12.8337ZM7.00001 11.667C9.57735 11.667 11.6667 9.57767 11.6667 7.00033C11.6667 4.423 9.57735 2.33366 7.00001 2.33366C4.42268 2.33366 2.33334 4.423 2.33334 7.00033C2.33334 9.57767 4.42268 11.667 7.00001 11.667ZM6.41667 4.08366H7.58334V5.25033H6.41667V4.08366ZM6.41667 6.41699H7.58334V9.91699H6.41667V6.41699Z" fill="url(#paint0_linear_1154_949)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_1154_949" x1="0.179492" y1="7.00033" x2="14.359" y2="7.00033" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#457EF8"/>
+                    <stop offset="1" stop-color="#5E69DF"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>
+                </label>
+                <select id="studyType" class="bg-white border border-brand-blue-500/25 text-brand-blue-500/50 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                  <option selected disabled>Studies</option>
+                  <option value="t-m">Time management</option>
+                  <option value="writing">Writing</option>
+                  <option value="research">Research</option>
+                  <option value="g-w">Group work</option>
+                </select>
+              </div>
+
+              <!-- What year do you graduate -->
+              <div class="space-y-2">
+                <label class="flex items-center" for="year">
+                  <span>What year do you graduate</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.99999 12.8337C3.77833 12.8337 1.16666 10.222 1.16666 7.00033C1.16666 3.77866 3.77833 1.16699 6.99999 1.16699C10.2216 1.16699 12.8333 3.77866 12.8333 7.00033C12.8333 10.222 10.2216 12.8337 6.99999 12.8337ZM6.99999 11.667C9.57733 11.667 11.6667 9.57767 11.6667 7.00033C11.6667 4.423 9.57733 2.33366 6.99999 2.33366C4.42266 2.33366 2.33332 4.423 2.33332 7.00033C2.33332 9.57767 4.42266 11.667 6.99999 11.667ZM6.41666 4.08366H7.58332V5.25033H6.41666V4.08366ZM6.41666 6.41699H7.58332V9.91699H6.41666V6.41699Z" fill="black"/>
+                    </svg>            
+                </label>
+                <select id="year" class="bg-white border border-brand-blue-500/25 text-brand-blue-500/50 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                  <option selected disabled>Select Year</option>
+                  <option value="2019">2019</option>
+                  <option value="2022">2022</option>
+                  <option value="2024">2024</option>
+                  <option value="2023">2023</option>
+                </select>
+              </div>
+              <!-- Subject -->
+              <div class="space-y-2">
+                <label class="flex items-center" for="Subject">
+                  <span>Subject</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.99999 12.8337C3.77833 12.8337 1.16666 10.222 1.16666 7.00033C1.16666 3.77866 3.77833 1.16699 6.99999 1.16699C10.2216 1.16699 12.8333 3.77866 12.8333 7.00033C12.8333 10.222 10.2216 12.8337 6.99999 12.8337ZM6.99999 11.667C9.57733 11.667 11.6667 9.57767 11.6667 7.00033C11.6667 4.423 9.57733 2.33366 6.99999 2.33366C4.42266 2.33366 2.33332 4.423 2.33332 7.00033C2.33332 9.57767 4.42266 11.667 6.99999 11.667ZM6.41666 4.08366H7.58332V5.25033H6.41666V4.08366ZM6.41666 6.41699H7.58332V9.91699H6.41666V6.41699Z" fill="black"/>
+                    </svg>
+                    
+                </label>
+                <select id="Subject" class="bg-white border border-brand-blue-500/25 text-brand-blue-500/50 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                  <option selected disabled>Select Subject</option>
+                  <option value="Economics">Economics</option>
+                  <option value="Education">Education</option>
+                  <option value="Chemistry">Chemistry</option>
+                  <option value="Engineering">Engineering</option>
+                </select>
+              </div>
+    
+            </form>
+          </div>
+
+          <!-- 3 -->
+          <div class="steps text-brand-blue-500 text-center py-8 px-4 xl:px-7">
+            <div class=" size-16 xl:size-24 shrink-0 rounded-full bg-base mx-auto p-2.5 xl:p-5">
+              <svg class="size-full" width="52" height="36" viewBox="0 0 52 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M46.362 -0.000122045C45.0583 1.64163e-05 43.8064 0.519412 42.8851 1.44182L19.2125 25.1358L9.11484 15.0289C9.11475 15.0288 9.11465 15.0287 9.11456 15.0286C7.20755 13.1203 4.06796 13.1203 2.16094 15.0286C2.16085 15.0287 2.16076 15.0288 2.16066 15.0289C0.254062 16.9376 0.254062 20.0762 2.16066 21.985C2.16076 21.985 2.16085 21.985 2.16094 21.985L14.0389 33.8737C16.8711 36.7084 21.5541 36.7086 24.3864 33.8737L49.8392 8.39789C51.7458 6.48914 51.7458 3.35057 49.8392 1.44182C48.9178 0.519413 47.6662 7.8724e-05 46.3625 -0.000122045C46.3624 -0.000122079 46.3622 -0.000122079 46.362 -0.000122045Z" fill="white"/>
+                <path d="M46.3616 -0.00012207C45.8392 -6.66857e-05 45.3265 0.0869531 44.8388 0.246242C45.5683 0.484519 46.2404 0.888999 46.7926 1.44182C48.6992 3.35057 48.6992 6.48914 46.7926 8.39789L21.3398 33.8737C20.3089 34.9055 19.0319 35.5569 17.6892 35.8376C20.0356 36.3281 22.5846 35.6767 24.3859 33.8737L49.8388 8.39789C51.7454 6.48914 51.7454 3.35057 49.8388 1.44182C48.9174 0.519415 47.6658 7.86988e-05 46.3621 -0.00012207H46.3616Z" fill="white"/>
+                </svg>    
+            </div>
+            <h2 class="font-bold text-2xl/7 xl:text-display-3xl mt-5">Great!  <br>
+              Your profile is now fully setup.</h2>
+            <p class="mt-3">Click on "Finish" to go to your library.</p>
+          </div>
+
+          <div class="btn-group font-roboto flex flex-col md:flex-row items-center justify-between gap-3.5 px-4 lg:px-7 pb-10">
+            <!-- back -->
+            <button type="button" disabled class="btn-prev bg-base w-full md:w-auto rounded-lg p-0.5">
+              <span class="block md:inline-block bg-white py-1.5 px-7 rounded-lg">
+                <span class="inline-block bg-clip-text bg-base text-transparent">Back</span>
+              </span>
+            </button>
+            <!-- Next -->
+            <button type="button" class="order-first md:order-none btn-next bg-base w-full md:w-auto text-white rounded-lg py-2 px-8">Next</button>
+            <!-- Finish -->
+            <button type="button" class="btn-finish hidden mx-auto bg-base text-white rounded-lg py-2 px-8">Finish</button>
+          </div>
+
+      </div>
+    </div>
+  </main>
+  <footer class="md:absolute md:left-0 md:w-1/2 md:bottom-0"> 
+    <p class="text-center md:text-start py-3 xl:py-6 px-4 lg:px-10 xl:px-16">© 2023 Thinkswap</p>
+  </footer>
+  <script src="/scripts/app.js"></script>
+</body>
+</html>
+
+
