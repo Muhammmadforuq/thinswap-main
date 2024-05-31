@@ -14,6 +14,7 @@ tailwind.config = {
       colors:{
         brand:{
           blue:{
+            100:"#313A7A",
             200:"#0C0D1B",
             300:"#5B6CE3",
             400:"#457EF8",
@@ -32,6 +33,10 @@ tailwind.config = {
             300:"#F7F8FF",
             400:"#D7D8DE",
             500:"#687588"
+          },
+          red:{
+            100:"#FFEBEB",
+            500:"#FF2C2C",
           },
           green:"#3FC044"
         }
