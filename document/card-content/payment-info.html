@@ -9,7 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="/tailwind.config.js"></script>
-  <title>Thinswap || Card Content || Home</title>
+  <title>Thinswap || Card Content || </title>
 </head>
 <body>
   <header class="py-3.5 px-4">
@@ -111,8 +111,7 @@
      </div>
     </div>
   </header>
-  <main class="relative bg-brand-gray-20 after:absolute after:left-0 after:w-full after:top-0 after:h-64 xl:after:h-96 after:bg-brand-blue-500 after
-  :z-0 px-4 pb-9">
+  <main class="relative bg-brand-gray-20 after:absolute after:left-0 after:w-full after:top-0 after:h-64 xl:after:h-96 after:bg-brand-blue-500 after:z-0 px-4 pb-9">
       <!-- hero -->
       <div class="relative max-w-7xl w-full mx-auto pt-7 z-10">
         <!-- buttons -->
@@ -149,116 +148,98 @@
         </div>
       </div>
       <div class="relative max-w-7xl mx-auto bg-white border border-brand-blue-300/15 rounded-lg p-3 md:p-5 xl:py-8 xl:px-12 mt-4 lg:mt-7 z-10">
-        <h2 class="font-bold text-xl lg:text-3xl xl:text-display-4xl/none">Choose your package</h2>
-          <div class="grid grid-cols-2 items-end gap-8 mt-8">
-            <div class="pr-8">
-              <h3 class="font-semibold text-display-2xl/8">Available Package</h3>
-              <div class="font-medium text-brand-blue-500 space-y-2.5 mt-4">
-                <div class="group flex items-center justify-between cursor-pointer bg-brand-gray-30 hover:bg-brand-blue-300 hover:text-white transition-colors rounded-lg gap-5 pl-5 py-5 pr-11">
-                  <h4 class="text-2xl">10 Ex</h4>
-                  <div class="flex items-center space-x-2">
-                    <h4 class="text-2xl">$14.49</h4>
-                    <span class="font-roboto font-normal text-brand-blue-300 group-hover:text-white transition-colors">Save 5% </span>
-                  </div>
+          <div class="grid grid-cols-2 gap-8 mt-8">
+            <div class="space-y-6">
+              <div class="flex items-center space-x-3">
+                <h2 class="font-bold text-xl lg:text-3xl xl:text-display-4xl/none">Your Cart</h2>
+                <button type="button" class="font-medium text-brand-blue-300 underline">Change Selection</button>
+              </div>
+              <div class="grid md:grid-cols-2 font-semibold text-sm lg:text-base border border-brand-gray-60 rounded-t-lg overflow-hidden">
+                <div class="md:border-r border-brand-gray-60">
+                  <p class="font-medium text-xs lg:text-sm text-brand-blue-500/80 bg-brand-gray-30 border-b border-brand-gray-60 p-2.5 xl:py-4 xl:px-6">Product Name</p>
+                  <p class="bg-white p-2.5 xl:py-4 xl:px-6">10 Ex Credits</p>
                 </div>
-                <div class="group flex items-center justify-between cursor-pointer bg-brand-gray-30 hover:bg-brand-blue-300 hover:text-white transition-colors rounded-lg gap-5 pl-5 py-5 pr-11">
-                  <h4 class="text-2xl">50 Ex</h4>
-                  <div class="flex items-center space-x-2">
-                    <h4 class="text-2xl">$29.99</h4>
-                    <span class="font-roboto font-normal text-brand-blue-300 group-hover:text-white transition-colors">Save 5% </span>
-                  </div>
-                </div>
-                <div class="group flex items-center justify-between cursor-pointer bg-brand-gray-30 hover:bg-brand-blue-300 hover:text-white transition-colors rounded-lg gap-5 pl-5 py-5 pr-11">
-                  <h4 class="text-2xl">100 Ex</h4>
-                  <div class="flex items-center space-x-2">
-                    <h4 class="text-2xl">$44.99</h4>
-                    <span class="font-roboto font-normal text-brand-blue-300 group-hover:text-white transition-colors">Save 5% </span>
-                  </div>
-                </div>
-                <div class="group flex items-center justify-between cursor-pointer bg-brand-gray-30 hover:bg-brand-blue-300 hover:text-white transition-colors rounded-lg gap-5 pl-5 py-5 pr-11">
-                  <h4 class="text-2xl">200 Ex</h4>
-                  <p>Most Popular</p>
-                  <div class="flex items-center space-x-2">
-                    <h4 class="text-2xl">$59.99</h4>
-                    <span class="font-roboto font-normal text-brand-blue-300 group-hover:text-white transition-colors">Save 5% </span>
-                  </div>
+                <div class="xl:text-center">
+                  <p class="font-medium text-xs lg:text-sm text-brand-blue-500/80 bg-brand-gray-30 border-b border-brand-gray-60 p-2.5 xl:py-4 xl:px-6">Price</p>
+                  <p class="bg-white p-2.5 xl:py-4 xl:px-6">$45.00</p>
                 </div>
               </div>
+
+              <form class="bg-brand-gray-30 p-4 rounded-lg">
+                <label class="block text-brand-blue-500 text-sm mb-2">Coupon Code</label>
+                <div class="flex items-center bg-white space-x-2 rounded-lg p-2">
+                  <input type="number" class="w-full border-none focus:border-none placeholder:text-brand-blue-500/35" placeholder="Enter your coupon code">
+                  <button type="button" class="font-medium bg-brand-blue-300 text-white rounded-lg py-2 px-7">Apply</button>
+                </div>
+                <div class="flex items-center justify-between font-semibold text-sm lg:text-base xl:text-lg mt-4">
+                  <p>Total</p>
+                  <p>$160.00</p>
+                </div>
+              </form>
             </div>
 
-            <div class="border-l border-brand-blue-100/5 space-y-12 pl-16">
-              <!-- 1 -->
-              <div class="flex items-start gap-4">
-                <svg class="size-12" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_1_9798)">
-                  <path d="M46.6754 25.6478C46.4742 25.2362 46.4742 24.7641 46.6754 24.3526L48.5402 20.5377C49.5785 18.4136 48.7559 15.8818 46.6674 14.7737L42.9165 12.7835C42.5118 12.5689 42.2343 12.1868 42.1551 11.7358L41.4215 7.55326C41.013 5.22457 38.859 3.65973 36.5184 3.99088L32.3141 4.58561C31.8603 4.64967 31.4115 4.50377 31.0823 4.18531L28.0305 1.23299C26.3312 -0.410947 23.6691 -0.411045 21.9699 1.23299L18.918 4.18561C18.5887 4.50416 18.1399 4.64977 17.6862 4.5859L13.4819 3.99118C11.1406 3.65983 8.98726 5.22486 8.57876 7.55356L7.84518 11.7359C7.76598 12.187 7.48854 12.569 7.08395 12.7837L3.33299 14.7739C1.24453 15.8819 0.421879 18.4138 1.46015 20.538L3.32489 24.3528C3.52606 24.7644 3.52606 25.2365 3.32489 25.648L1.46006 29.4628C0.421781 31.5869 1.24443 34.1186 3.3329 35.2267L7.08385 37.217C7.48854 37.4316 7.76598 37.8136 7.84518 38.2647L8.57876 42.4472C8.95064 44.5671 10.7684 46.0538 12.8575 46.0536C13.0633 46.0536 13.2721 46.0392 13.482 46.0095L17.6863 45.4148C18.1397 45.3504 18.5888 45.4966 18.9181 45.815L21.9699 48.7674C22.8197 49.5894 23.9097 50.0004 25.0002 50.0003C26.0903 50.0002 27.181 49.5892 28.0304 48.7674L31.0823 45.815C31.4116 45.4966 31.8605 45.3511 32.3141 45.4148L36.5184 46.0095C38.86 46.3407 41.013 44.7758 41.4215 42.4471L42.1552 38.2648C42.2344 37.8136 42.5119 37.4317 42.9165 37.217L46.6674 35.2267C48.7559 34.1187 49.5785 31.5868 48.5402 29.4627L46.6754 25.6478ZM19.2325 12.0232C22.1477 12.0232 24.5195 14.3949 24.5195 17.3101C24.5195 20.2254 22.1477 22.5971 19.2325 22.5971C16.3173 22.5971 13.9455 20.2254 13.9455 17.3101C13.9455 14.3949 16.3173 12.0232 19.2325 12.0232ZM16.5036 35.5357C16.2221 35.8173 15.853 35.9581 15.4841 35.9581C15.1152 35.9581 14.746 35.8174 14.4646 35.5357C13.9015 34.9726 13.9015 34.0597 14.4646 33.4966L33.4966 14.4646C34.0596 13.9015 34.9727 13.9015 35.5357 14.4646C36.0988 15.0276 36.0988 15.9406 35.5357 16.5037L16.5036 35.5357ZM30.7676 37.9773C27.8524 37.9773 25.4806 35.6055 25.4806 32.6903C25.4806 29.7751 27.8524 27.4033 30.7676 27.4033C33.6828 27.4033 36.0546 29.7751 36.0546 32.6903C36.0546 35.6055 33.6828 37.9773 30.7676 37.9773Z" fill="#FF9E45"/>
-                  <path d="M30.7675 30.2871C29.4424 30.2871 28.3643 31.3651 28.3643 32.6902C28.3643 34.0153 29.4423 35.0933 30.7675 35.0933C32.0926 35.0933 33.1706 34.0153 33.1706 32.6902C33.1706 31.3651 32.0926 30.2871 30.7675 30.2871Z" fill="#FF9E45"/>
-                  <path d="M19.2325 14.9067C17.9074 14.9067 16.8293 15.9848 16.8293 17.3098C16.8293 18.6349 17.9074 19.7131 19.2325 19.7131C20.5575 19.7131 21.6357 18.635 21.6357 17.3098C21.6356 15.9849 20.5575 14.9067 19.2325 14.9067Z" fill="#FF9E45"/>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_1_9798">
-                  <rect width="50" height="50" fill="white"/>
-                  </clipPath>
-                  </defs>
-                  </svg>
-                  <div class="space-y-2.5">
-                    <h4 class="font-medium text-xl">Bulk discount</h4>
-                    <p class="text-brand-blue-500/70 text-sm">Purchasing Exchange Credit Packs gives you a bulk discount.</p>
-                  </div>                    
-              </div>
-              <!-- 2 -->
-              <div class="flex items-start gap-4">
-                  <svg class="size-12" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_1_9812)">
-                    <path d="M12.7186 13.5024L8.38678 13.8371C7.18141 13.9303 6.10789 14.562 5.44129 15.5703L0.445529 23.1261C-0.0600337 23.8907 -0.140404 24.8477 0.230394 25.6859C0.601289 26.5242 1.36349 27.1084 2.26924 27.2487L6.23552 27.863C7.16335 22.9392 9.38442 18.0275 12.7186 13.5024Z" fill="#FF9E45"/>
-                    <path d="M22.1367 43.7643L22.7511 47.7306C22.8914 48.6363 23.4756 49.3985 24.3138 49.7693C24.6625 49.9236 25.0316 49.9998 25.3989 49.9998C25.9148 49.9998 26.4271 49.8495 26.8737 49.5542L34.4297 44.5585C35.438 43.8918 36.0697 42.8182 36.1627 41.6131L36.4973 37.2812C31.9722 40.6155 27.0606 42.8366 22.1367 43.7643Z" fill="#FF9E45"/>
-                    <path d="M20.645 41.0152C20.7827 41.0152 20.9212 41.0039 21.0593 40.9808C23.1222 40.6359 25.1105 40.0548 27.0071 39.2943L10.7055 22.9927C9.94497 24.8892 9.36392 26.8775 9.019 28.9405C8.88306 29.7537 9.15581 30.5821 9.73872 31.1651L18.8347 40.2611C19.3187 40.745 19.9719 41.0152 20.645 41.0152Z" fill="#FF9E45"/>
-                    <path d="M46.0132 22.1681C50.0023 14.4558 50.15 6.30591 49.9416 2.48367C49.8702 1.17401 48.826 0.129882 47.5163 0.0584956C46.8939 0.0245115 46.1563 0 45.325 0C41.051 0 34.2883 0.647358 27.8319 3.98688C22.7008 6.64087 15.9727 12.4847 12.0032 20.1645C12.05 20.2011 12.0958 20.24 12.139 20.2831L29.717 37.8611C29.7602 37.9043 29.7989 37.95 29.8356 37.9969C37.5154 34.0273 43.3592 27.2991 46.0132 22.1681ZM29.0719 10.5702C31.9274 7.71469 36.574 7.71439 39.4297 10.5702C40.8131 11.9535 41.5749 13.7929 41.5749 15.7492C41.5749 17.7055 40.8131 19.5449 39.4297 20.9282C38.0021 22.3558 36.1261 23.0697 34.2509 23.0699C32.375 23.07 30.4999 22.3562 29.0719 20.9282C27.6885 19.5449 26.9266 17.7055 26.9266 15.7492C26.9266 13.7929 27.6885 11.9535 29.0719 10.5702Z" fill="#FF9E45"/>
-                    <path d="M31.1433 18.8567C32.8567 20.5701 35.6448 20.5702 37.3582 18.8567C38.1881 18.0267 38.6453 16.9231 38.6453 15.7493C38.6453 14.5755 38.1881 13.472 37.3582 12.642C36.5015 11.7853 35.3761 11.3569 34.2507 11.3569C33.1254 11.3569 32 11.7853 31.1434 12.642C30.3134 13.472 29.8562 14.5755 29.8562 15.7493C29.8562 16.9231 30.3133 18.0268 31.1433 18.8567Z" fill="#FF9E45"/>
-                    <path d="M1.49468 41.2044C1.86958 41.2044 2.24448 41.0615 2.53042 40.7753L7.31294 35.9928C7.88501 35.4208 7.88501 34.4933 7.31294 33.9212C6.74097 33.3492 5.81343 33.3492 5.24136 33.9212L0.458838 38.7038C-0.113232 39.2758 -0.113232 40.2033 0.458838 40.7753C0.744873 41.0614 1.11978 41.2044 1.49468 41.2044Z" fill="#FF9E45"/>
-                    <path d="M11.6959 38.3041C11.124 37.732 10.1964 37.732 9.62436 38.3041L0.429541 47.4989C-0.142529 48.0709 -0.142529 48.9984 0.429541 49.5705C0.715576 49.8565 1.09048 49.9995 1.46538 49.9995C1.84028 49.9995 2.21519 49.8565 2.50112 49.5704L11.6958 40.3756C12.268 39.8036 12.268 38.8761 11.6959 38.3041Z" fill="#FF9E45"/>
-                    <path d="M14.0069 42.6874L9.22446 47.4699C8.65239 48.0419 8.65239 48.9694 9.22446 49.5415C9.5105 49.8275 9.8854 49.9706 10.2602 49.9706C10.635 49.9706 11.01 49.8276 11.2959 49.5415L16.0785 44.7589C16.6505 44.1869 16.6505 43.2594 16.0785 42.6874C15.5065 42.1153 14.579 42.1153 14.0069 42.6874Z" fill="#FF9E45"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_1_9812">
-                    <rect width="50" height="50" fill="white"/>
-                    </clipPath>
-                    </defs>
-                    </svg>            
-                  <div class="space-y-2.5">
-                    <h4 class="font-medium text-xl">Speed up checkout</h4>
-                    <p class="text-brand-blue-500/70 text-sm">Speed up your checkout next time you 
-                      purchase documents by having an available Exchange Credit
-                      balance.
-                    </p>
-                  </div>                    
-              </div>
-              <!-- 3 -->
-              <div class="flex items-start gap-4">
-                  <svg class="size-12" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_1_9825)">
-                    <path d="M25 0C11.2149 0 0 11.2149 0 25C0 38.7851 11.2149 50 25 50C38.7851 50 50 38.7851 50 25C50 11.2149 38.7851 0 25 0ZM36.338 28.4507H24.507C24.4832 28.4507 24.4602 28.4479 24.4366 28.4472C24.4131 28.448 24.39 28.4507 24.3662 28.4507C23.1994 28.4507 22.2535 27.5048 22.2535 26.338V9.15498C22.2535 7.98818 23.1994 7.04228 24.3662 7.04228C25.533 7.04228 26.4789 7.98818 26.4789 9.15498V24.2254H36.3381C37.5049 24.2254 38.4508 25.1713 38.4508 26.3381C38.4508 27.5049 37.5048 28.4507 36.338 28.4507Z" fill="#FF9E45"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_1_9825">
-                    <rect width="50" height="50" fill="white"/>
-                    </clipPath>
-                    </defs>
-                    </svg>
-                    
-                  <div class="space-y-2.5">
-                    <h4 class="font-medium text-xl">Exchange credits never expires</h4>
-                    <p class="text-brand-blue-500/70 text-sm">Exchange Credits never expire! You can use them for as long as you continue to need resources from Thinkswap.</p>
-                  </div>                    
-              </div>
+            <div class="">
+              <h2 class="font-bold text-xl lg:text-3xl xl:text-display-4xl/none">Payment Info</h2>
+                <div class="bg-base hover:bg-black/20 hover:bg-none cursor-pointer rounded-lg transition-[backgroundImage] p-0.5 mt-6">
+                  <div class="flex items-center justify-between bg-brand-gray-30 p-4 rounded-lg">
+                    <div class="flex items-center text-brand-blue-500 text-lg space-x-3.5">
+                      <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.5938 9.13818C24.5938 9.33977 24.5938 9.54136 24.5938 9.74295C23.1827 16.597 18.7477 18.8145 12.9016 18.8145H9.87776C9.273 18.8145 8.66823 19.4192 8.46664 20.024L6.45074 32.321C6.45074 32.7241 6.65233 33.1273 7.2571 33.1273H12.4984C13.1032 33.1273 13.708 32.7241 13.708 32.1194V31.9178L14.7159 25.6685V25.2653C14.7159 24.6606 15.3207 24.2574 15.9254 24.2574H16.7318C21.7715 24.2574 25.8033 22.2415 26.8113 16.1938C27.2145 13.7747 27.0129 11.5573 25.8033 10.1461C25.6017 9.74295 25.1986 9.33977 24.5938 9.13818Z" fill="#139AD6"/>
+                        <path d="M23.1828 3.29163C21.7717 1.67891 19.151 0.872559 15.5224 0.872559H5.44291C4.83815 0.872559 4.23338 1.47732 4.03179 2.08209L0 28.4903C0 29.0951 0.403179 29.4983 0.806358 29.4983H7.05563L8.66834 19.6204V20.0236C8.86993 19.4188 9.4747 18.814 10.0795 18.814H13.1033C18.9494 18.814 23.3844 16.3949 24.7955 9.74249C24.7955 9.5409 24.7955 9.33931 24.7955 9.13772C24.5939 9.13772 24.5939 9.13772 24.7955 9.13772C24.9971 6.51706 24.5939 4.90434 23.1828 3.29163Z" fill="#263B80"/>
+                        <path d="M23.1828 8.53348C22.9812 8.53348 22.7796 8.33189 22.578 8.33189C22.3764 8.33189 22.1748 8.33189 21.9732 8.1303C21.1669 7.92871 20.3605 7.92871 19.3526 7.92871H11.4906C11.289 7.92871 11.0874 7.92871 10.8858 8.1303C10.4826 8.33189 10.281 8.73507 10.281 9.13824L8.66833 19.6209V20.0241C8.86992 19.4193 9.47469 18.8145 10.0795 18.8145H13.1033C18.9494 18.8145 23.3844 16.3955 24.7955 9.74301C24.7955 9.54143 24.7955 9.33983 24.9971 9.13824C24.5939 8.93665 24.3923 8.73507 23.9891 8.73507C23.3844 8.53348 23.3844 8.53348 23.1828 8.53348Z" fill="#232C65"/>
+                        </svg>
+                      <span>Checkout using Paypal</span>                      
+                    </div>
+                    <button type="button" class="flex items-center font-medium bg-brand-blue-300 text-white rounded-lg space-x-2 py-2 px-7">
+                      <span>Proceed</span>
+                      <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 5.25C1.08579 5.25 0.75 5.58579 0.75 6C0.75 6.41421 1.08579 6.75 1.5 6.75V5.25ZM19.0303 6.53033C19.3232 6.23744 19.3232 5.76256 19.0303 5.46967L14.2574 0.696699C13.9645 0.403806 13.4896 0.403806 13.1967 0.696699C12.9038 0.989593 12.9038 1.46447 13.1967 1.75736L17.4393 6L13.1967 10.2426C12.9038 10.5355 12.9038 11.0104 13.1967 11.3033C13.4896 11.5962 13.9645 11.5962 14.2574 11.3033L19.0303 6.53033ZM1.5 6.75H18.5V5.25H1.5V6.75Z" fill="white"/>
+                        </svg>
+                        
+                    </button>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between space-x-4 py-2.5">
+                  <hr class="inline-block bg-brand-gray-60 h-px w-full">
+                  <p class="font-medium whitespace-nowrap text-brand-gray-500/40 tracking-wide">OR</p>
+                  <hr class="inline-block bg-brand-gray-60 h-px w-full">
+                </div>
+                <div class="text-sm lg:text-base xl:text-lg space-y-3 mt-2.5">
+                  <!-- mastercard -->
+                  <label class="flex items-center cursor-pointer border border-black/20 rounded-lg space-x-3 py-2.5 px-4">
+                    <input type="radio" name="radio" id="mastercard" class="!border-brand-blue-500 !focus:border-none !ring-0">
+                    <p>Mastercard</p>
+                  </label>
+                  <!-- Visa (1003) -->
+                  <label class="flex items-center cursor-pointer border border-black/20 rounded-lg space-x-3 py-2.5 px-4">
+                    <input type="radio" name="radio" id="visa" class="!border-brand-blue-500 !focus:border-none !ring-0">
+                    <p>Visa (1003)</p>
+                  </label>
+                  <!-- Card -->
+                  <label class="flex items-center cursor-pointer border border-black/20 rounded-lg space-x-3 py-2.5 px-4">
+                    <input type="radio" name="radio" id="card" class="!border-brand-blue-500 !focus:border-none !ring-0">
+                    <p>Card</p>
+                  </label>
+                  <!--Airwallex -->
+                  <label class="flex items-center cursor-pointer border border-black/20 rounded-lg space-x-3 py-2.5 px-4">
+                    <input type="radio" name="radio" id="Airwallex" class="!border-brand-blue-500 !focus:border-none !ring-0">
+                    <p>Airwallex</p>
+                  </label>
+                  <!--AliPay -->
+                  <label class="flex items-center cursor-pointer border border-black/20 rounded-lg space-x-3 py-2.5 px-4">
+                    <input type="radio" name="radio" id="AliPay" class="!border-brand-blue-500 !focus:border-none !ring-0">
+                    <p>AliPay</p>
+                  </label>
+                  <!--Direct Debit -->
+                  <label class="flex items-center cursor-pointer border border-black/20 rounded-lg space-x-3 py-2.5 px-4">
+                    <input type="radio" name="radio" id="DirectDebit" class="!border-brand-blue-500 !focus:border-none !ring-0">
+                    <p>Direct Debit</p>
+                  </label>
+                </div>
             </div>
           </div>
       </div>
-
-      <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-end font-semibold text-sm lg:text-base xl:text-xl gap-2 mt-4 lg:mt-7">
-        <button type="submit" class="text-white bg-brand-green border rounded-lg py-2 xl:py-3 px-10 xl:px-16">Proceed</button>
-      </div>
-      
+    
   </main>
 
   <footer class="bg-white border-t border-black/15 px-4 py-5">
