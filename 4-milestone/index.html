@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/assets/fonts/font.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/tailwind.config.js"></script>
+  <title>Thinswap </title>
+</head>
+<body>
+  <header class="py-3.5 px-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-5 lg:gap-7">
+      <!-- logo -->
+      <a href="index.html">
+        <img src="/assets/img/logo.svg" alt="logo">
+      </a>
+     <div class="flex items-center justify-between gap-5 whitespace-nowrap bg-white lg:w-full z-30">
+      <div class="hidden lg:block w-[360px]">
+        <label for="topbar-search" class="sr-only">Search</label>
+        <div class="relative mt-1">
+          <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+           <svg class="w-4 h-4 text-gray-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"> <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"></path> </svg>
+          </div>
+          <input type="text" name="email" id="topbar-search" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-main focus:border-main block w-full pl-9 p-2.5" placeholder="Search Thinkswap">
+        </div>
+      </div>
+       <div class="flex items-center gap-5 whitespace-nowrap">
+        <!-- Browse subjects -->
+         <button class="hidden lg:flex items-center gap-3 text-brand-blue-500">
+          <svg width="19" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.0005 0.86499V2.86499H17.0005L11.0005 11.865V18.865H7.00049V11.865L1.00049 2.86499H0.000488281V0.86499H18.0005Z" fill="#5B5F79" fill-opacity="0.36"></path>
+          </svg>
+          <span>Browse subjects </span>
+          </button>
+
+          <!-- 40 Credits -->
+          <button class="hidden lg:flex items-center gap-3 text-brand-blue-500 pl-6 border-l border-brand-blue-500/10">
+            <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.5002 27.9324C26.1942 27.9324 28.4782 27.1734 30.0002 25.9214V26.9324C30.0002 29.2124 27.2062 30.9324 23.5002 30.9324C19.7942 30.9324 17.0002 29.2124 17.0002 26.9324C17.0002 26.5994 17.0002 26.2584 17.0002 25.9214C18.5222 27.1734 20.8062 27.9324 23.5002 27.9324Z" fill="#FFA500"/>
+              <path d="M23.5002 22.9324C26.1942 22.9324 28.4782 22.1734 30.0002 20.9214V21.9324C30.0002 24.2124 27.2062 25.9324 23.5002 25.9324C19.7942 25.9324 17.0002 24.2124 17.0002 21.9324C17.0002 21.5994 17.0002 21.2584 17.0002 20.9214C18.5222 22.1734 20.8062 22.9324 23.5002 22.9324Z" fill="#FFA500"/>
+              <path d="M23.5002 17.9324C26.1942 17.9324 28.4782 17.1734 30.0002 15.9214V16.9324C30.0002 19.2124 27.2062 20.9324 23.5002 20.9324C19.7942 20.9324 17.0002 19.2124 17.0002 16.9324C17.0002 16.5994 17.0002 16.2584 17.0002 15.9214C18.5222 17.1734 20.8062 17.9324 23.5002 17.9324Z" fill="#FFA500"/>
+              <path d="M17.0002 6.93237C17.0002 4.65237 19.7942 2.93237 23.5002 2.93237C27.2062 2.93237 30.0002 4.65237 30.0002 6.93237C30.0002 9.21237 27.2062 10.9324 23.5002 10.9324C19.7942 10.9324 17.0002 9.21237 17.0002 6.93237Z" fill="#FFA500"/>
+              <path d="M23.5002 12.9324C26.1942 12.9324 28.4782 12.1734 30.0002 10.9214V11.9324C30.0002 14.2124 27.2062 15.9324 23.5002 15.9324C19.7942 15.9324 17.0002 14.2124 17.0002 11.9324C17.0002 11.5994 17.0002 11.2584 17.0002 10.9214C18.5222 12.1734 20.8062 12.9324 23.5002 12.9324Z" fill="#FFA500"/>
+              <path d="M8.50024 27.9324C11.1942 27.9324 13.4782 27.1734 15.0002 25.9214V26.9324C15.0002 29.2124 12.2062 30.9324 8.50024 30.9324C4.79424 30.9324 2.00024 29.2124 2.00024 26.9324C2.00024 26.5994 2.00024 26.2584 2.00024 25.9214C3.52224 27.1734 5.80624 27.9324 8.50024 27.9324Z" fill="#FFA500"/>
+              <path d="M15.0002 16.9324C15.0002 19.2124 12.2062 20.9324 8.50024 20.9324C4.79424 20.9324 2.00024 19.2124 2.00024 16.9324C2.00024 14.6524 4.79424 12.9324 8.50024 12.9324C12.2062 12.9324 15.0002 14.6524 15.0002 16.9324Z" fill="#FFA500"/>
+              <path d="M8.50024 22.9324C11.1942 22.9324 13.4782 22.1734 15.0002 20.9214V21.9324C15.0002 24.2124 12.2062 25.9324 8.50024 25.9324C4.79424 25.9324 2.00024 24.2124 2.00024 21.9324C2.00024 21.5994 2.00024 21.2584 2.00024 20.9214C3.52224 22.1734 5.80624 22.9324 8.50024 22.9324Z" fill="#FFA500"/>
+              </svg>              
+            <span>40 Credits</span>
+          </button>
+          <!-- card -->
+         <button type="button" class="relative hidden lg:flex items-center text-xs font-medium text-center text-white border-x border-brand-blue-500/10 px-6">
+          <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M29.9705 9.60799L27.1605 20.85C26.9375 21.742 26.1395 22.365 25.2195 22.365H7.89049C6.87549 22.365 6.02149 21.605 5.90449 20.597L3.87949 4.36499H2.50049C1.67149 4.36499 1.00049 3.69399 1.00049 2.86499C1.00049 2.03599 1.67149 1.36499 2.50049 1.36499H5.18749C5.93749 1.36499 6.57149 1.91899 6.67349 2.66099L7.45549 8.36499H29.0005C29.6505 8.36499 30.1285 8.97699 29.9705 9.60799Z" fill="#2D3254" fill-opacity="0.36"/>
+            <path d="M7.00049 27.365C7.00049 29.019 8.34649 30.365 10.0005 30.365C11.6545 30.365 13.0005 29.019 13.0005 27.365C13.0005 25.711 11.6545 24.365 10.0005 24.365C8.34649 24.365 7.00049 25.711 7.00049 27.365Z" fill="#2D3254" fill-opacity="0.36"/>
+            <path d="M25.0005 27.365C25.0005 25.711 23.6545 24.365 22.0005 24.365C20.3465 24.365 19.0005 25.711 19.0005 27.365C19.0005 29.019 20.3465 30.365 22.0005 30.365C23.6545 30.365 25.0005 29.019 25.0005 27.365Z" fill="#2D3254" fill-opacity="0.36"/>
+            </svg>  
+          <span class="sr-only">Notifications</span>
+          <div class="absolute inline-flex items-center justify-center size-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 right-3">20</div>
+         </button>
+         <!--register and sign in  -->
+         <div class="relative hidden lg:flex gap-5">  
+            <button id="user-dropdown" data-dropdown-toggle="user-info" class="flex items-center space-x-2" type="button">
+              <!-- <span class="sr-only">Open user menu</span> -->
+                <div class="size-12 rounded-full overflow-hidden">
+                  <img class="size-full object-cover" src="/assets/img/avatar-user.svg" alt="user photo">
+                </div>
+
+                <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.00024 1.93237L5.00024 5.93237L9.00024 1.93237" stroke="#5B5F79" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div id="user-info" class="!-translate-x-28 !top-12 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 z-10 hidden">
+                  <div class="space-y-1 py-3">
+                    <!-- My Account -->
+                    <a href="#" class="flex items-center hover:bg-gray-100 gap-2 px-4 py-2">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H18C18 18.6863 15.3137 16 12 16C8.68629 16 6 18.6863 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z" fill="black"/>
+                        </svg>                          
+                      <span>Dashboard</span>
+                    </a>
+                    <!-- Help Center -->
+                    <a href="#" class="flex items-center hover:bg-gray-100 gap-2 px-4 py-2">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11 15H13V17H11V15ZM13 13.3551V14H11V12.5C11 11.9477 11.4477 11.5 12 11.5C12.8284 11.5 13.5 10.8284 13.5 10C13.5 9.17157 12.8284 8.5 12 8.5C11.2723 8.5 10.6656 9.01823 10.5288 9.70577L8.56731 9.31346C8.88637 7.70919 10.302 6.5 12 6.5C13.933 6.5 15.5 8.067 15.5 10C15.5 11.5855 14.4457 12.9248 13 13.3551Z" fill="black"/>
+                        </svg>                                                 
+                      <span>Help Center</span>
+                    </a>
+                    <!-- Logout -->
+                    <a href="#" class="flex items-center hover:bg-gray-100 gap-2 px-4 py-2">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 11H13V13H5V16L0 12L5 8V11ZM3.99927 18H6.70835C8.11862 19.2447 9.97111 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C9.97111 4 8.11862 4.75527 6.70835 6H3.99927C5.82368 3.57111 8.72836 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C8.72836 22 5.82368 20.4289 3.99927 18Z" fill="black"/>
+                        </svg>
+                                                  
+                      <span>Logout</span>
+                    </a>
+                  </div>
+  
+              </div>
+         </div>
+       
+         <!-- menu btn -->
+         <button class="lg:hidden">
+          <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.0126953 0.865234H18.0127V2.86523H0.0126953V0.865234ZM6.0127 7.86523H18.0127V9.86523H6.0127V7.86523ZM0.0126953 14.8652H18.0127V16.8652H0.0126953V14.8652Z" fill="black"></path>
+          </svg>
+        </button>
+        </div>
+     </div>
+    </div>
+  </header>
+  <main class="relative bg-brand-gray-20 after:absolute after:left-0 after:w-full after:top-0 after:h-64 xl:after:h-96 after:bg-brand-blue-500 after:z-0 px-4 pb-9">
+      <!-- hero -->
+      <div class="relative max-w-7xl w-full mx-auto pt-7 z-10">
+        <!-- buttons -->
+        <div class="container-snap relative flex items-center justify-between text-sm lg:text-base after:absolute after:inset-x-0 after:bottom-0 after:w-full after:bg-white/5 after:h-0.5 lg:after:h-1 gap-7 overflow-x-auto">
+          <!-- Upload Documents -->
+          <button type="button" class="relative flex items-center text-white/70 fill-transparent after:absolute after:inset-x-0 after:bottom-0 after:w-full after:h-0.5 lg:after:h-1 gap-2 pb-3 px-4 lg:px-6 xl:px-10">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 19H20V12H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V12H4V19ZM14 9V15H10V9H5L12 2L19 9H14Z" fill="white"/>
+              </svg>                           
+            <span class="whitespace-nowrap">Upload Documents</span>
+          </button>
+          <!-- Buy Exchange Credits -->
+          <button type="button" class="relative flex items-center text-white/70 fill-transparent after:absolute after:inset-x-0 after:bottom-0 after:w-full after:h-0.5 lg:after:h-1 gap-2 pb-3 px-4 lg:px-6 xl:px-10>
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.0003 8.16653C19.155 8.16653 23.3337 12.3452 23.3337 17.4999C23.3337 22.6546 19.155 26.8332 14.0003 26.8332C8.84567 26.8332 4.66699 22.6546 4.66699 17.4999C4.66699 12.3452 8.84567 8.16653 14.0003 8.16653ZM14.0003 10.4999C10.1343 10.4999 7.00033 13.6339 7.00033 17.4999C7.00033 21.3659 10.1343 24.4999 14.0003 24.4999C17.8663 24.4999 21.0003 21.3659 21.0003 17.4999C21.0003 13.6339 17.8663 10.4999 14.0003 10.4999ZM14.0003 12.2499L15.5432 15.3762L18.9934 15.8775L16.4969 18.3111L17.0862 21.7472L14.0003 20.1249L10.9145 21.7472L11.5038 18.3111L9.00728 15.8775L12.4574 15.3762L14.0003 12.2499ZM21.0003 2.3332V5.8332L19.4097 7.16035C18.1192 6.48386 16.6866 6.04186 15.1683 5.89094L15.167 2.33203L21.0003 2.3332ZM12.8337 2.33203L12.8333 5.89083C11.3151 6.04161 9.88253 6.48345 8.59214 7.15975L7.00033 5.8332V2.3332L12.8337 2.33203Z" fill="currentColor"/>
+              </svg>                                         
+            <span class="whitespace-nowrap">Buy Exchange Credits</span>
+          </button>
+          <!-- Elite Dashboard -->
+          <button type="button" class="relative flex items-center text-white fill-transparent after:absolute after:inset-x-0 after:bottom-0 after:w-full after:bg-base after:h-0.5 lg:after:h-1 gap-2 pb-3 px-4 lg:px-6 xl:px-10">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.66675 25.6667C4.66675 20.5121 8.84542 16.3334 14.0001 16.3334C19.1548 16.3334 23.3334 20.5121 23.3334 25.6667H4.66675ZM15.1667 18.7636V23.3334H20.6018C19.7661 20.9692 17.6965 19.1879 15.1667 18.7636ZM12.8334 23.3334V18.7636C10.3037 19.1879 8.23402 20.9692 7.39839 23.3334H12.8334ZM14.0001 15.1667C10.1326 15.1667 7.00008 12.0342 7.00008 8.16675C7.00008 4.29925 10.1326 1.16675 14.0001 1.16675C17.8676 1.16675 21.0001 4.29925 21.0001 8.16675C21.0001 12.0342 17.8676 15.1667 14.0001 15.1667ZM14.0001 12.8334C16.5789 12.8334 18.6667 10.7456 18.6667 8.16675C18.6667 5.58791 16.5789 3.50008 14.0001 3.50008C11.4212 3.50008 9.33341 5.58791 9.33341 8.16675C9.33341 10.7456 11.4212 12.8334 14.0001 12.8334Z" fill="currentColor"/>
+              </svg>
+                                        
+            <span class="whitespace-nowrap">Elite Dashboard</span>
+          </button>
+          <!-- Library -->
+          <button type="button" class="relative flex items-center text-white/70 fill-transparent after:absolute after:inset-x-0 after:bottom-0 after:w-full after:h-0.5 lg:after:h-1 gap-2 pb-3 px-4 lg:px-6 xl:px-10">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.1663 24.5V26.8333H12.833V24.5H3.49967C2.85535 24.5 2.33301 23.9777 2.33301 23.3333V4.66667C2.33301 4.02234 2.85535 3.5 3.49967 3.5H10.4997C11.8935 3.5 13.1446 4.11104 13.9997 5.07988C14.8547 4.11104 16.1059 3.5 17.4997 3.5H24.4997C25.144 3.5 25.6663 4.02234 25.6663 4.66667V23.3333C25.6663 23.9777 25.144 24.5 24.4997 24.5H15.1663ZM23.333 22.1667V5.83333H17.4997C16.211 5.83333 15.1663 6.878 15.1663 8.16667V22.1667H23.333ZM12.833 22.1667V8.16667C12.833 6.878 11.7884 5.83333 10.4997 5.83333H4.66634V22.1667H12.833Z" fill="currentColor"/>
+              </svg>                        
+            <span class="whitespace-nowrap">Library</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="relative max-w-7xl mx-auto bg-white rounded-lg p-3 md:p-5 xl:py-7 xl:px-12 mt-4 lg:mt-11 z-10">
+          <div class="flex flex-col md:flex-row justify-between md:items-center gap-5"> 
+            <div class="flex items-center gap-3 xl:gap-5">
+              <div class="size-16 md:size-20 xl:size-24 shrink-0 bg-base rounded-full p-1 xl:p-1.5">
+                <img class="size-full object-cover" src="/assets/img/avatar-gr.svg" alt="Avatar">
+              </div>
+              <div class="space-y-1">
+                <h3 class="font-bold text-xl/none xl:text-display-2xl/none text-brand-blue-500">Emmanuel Elite Signup</h3>
+                <a href="mailto:@elitesignupacu" class="block text-brand-blue-100/70">@elitesignupacu</a>
+              </div>
+            </div>
+            <button type="button" class="font-roboto text-sm xl:text-base bg-gradient-to-r from-brand-blue-10 to-brand-blue-20 text-white hover:to-brand-blue-10 hover:from-brand-blue-20 transition-colors rounded-lg py-2.5 xl:py-4 px-5 xl:px-8"> 
+              Edit Profile Details
+            </button>
+          </div>
+      </div>
+
+      <div class="relative max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 text-center gap-4 mt-5 z-10">
+        <div class="bg-white border border-brand-blue-300/15 shadow-5xl rounded-lg space-y-1 xl:space-y-2.5 p-5 md:px-10 xl:px-20">
+          <h3 class="font-bold inline-block text-xl lg:text-2xl xl:text-3xl bg-clip-text text-transparent bg-base">
+            01
+          </h3>
+          <p class="text-brand-blue-500 text-sm lg:text-base/6 xl:text-lg/6">Total documents for sale</p>
+        </div>
+        <div class="bg-white border border-brand-blue-300/15 shadow-5xl rounded-lg space-y-1 xl:space-y-2.5 p-5 md:px-10 xl:px-20">
+          <h3 class="font-bold inline-block text-xl lg:text-2xl xl:text-3xl bg-clip-text text-transparent bg-base">
+            $45
+          </h3>
+          <p class="text-brand-blue-500 text-sm lg:text-base/6 xl:text-lg/6">Total documents for sale</p>
+        </div>
+        <div class="bg-white border border-brand-blue-300/15 shadow-5xl rounded-lg space-y-1 xl:space-y-2.5 p-5 md:px-10 xl:px-20">
+          <h3 class="font-bold inline-block text-xl lg:text-2xl xl:text-3xl bg-clip-text text-transparent bg-base">
+            $35
+          </h3>
+          <p class="text-brand-blue-500 text-sm lg:text-base/6 xl:text-lg/6">Total documents for sale</p>
+        </div>
+        <div class="bg-white border border-brand-blue-300/15 shadow-5xl rounded-lg space-y-1 xl:space-y-2.5 p-5 md:px-10 xl:px-20">
+          <h3 class="font-bold inline-block text-xl lg:text-2xl xl:text-3xl bg-clip-text text-transparent bg-base">
+            $10k
+          </h3>
+          <p class="text-brand-blue-500 text-sm lg:text-base/6 xl:text-lg/6">Total documents for sale</p>
+        </div>
+      </div>
+
+      <div class="relative max-w-7xl mx-auto bg-white border border-brand-blue-300/15 shadow-5xl rounded-lg p-4 xl:p-8 mt-5 z-10 overflow-x-auto">
+        <h3 class="font-medium text-xl/none xl:text-display-2xl/none text-brand-blue-500">Your Elite Upload</h3>
+        <table class="w-full text-xs md:text-sm lg:text-base text-brand-blue-500 mt-3 lg:mt-6">
+          <tr class="font-medium text-xs">
+            <th class="bg-brand-gray-150 rounded-l-lg">
+              <div class="flex items-center justify-between font-semibold gap-5 p-2 md:px-4 lg:p-4">
+                <span class="whitespace-nowrap">Document Name</span>
+                <button type="button">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.46055 2.31984C6.75848 2.0262 7.24152 2.0262 7.53945 2.31984L10.275 5.01602C10.7556 5.4897 10.4152 6.29961 9.73558 6.29961H4.26442C3.58476 6.29961 3.24438 5.4897 3.72498 5.01602L6.46055 2.31984Z" fill="#CBD5E0"/>
+                    <path d="M6.46055 11.6794C6.75848 11.973 7.24152 11.973 7.53945 11.6794L10.275 8.9832C10.7556 8.50952 10.4152 7.69961 9.73558 7.69961H4.26442C3.58476 7.69961 3.24438 8.50952 3.72498 8.9832L6.46055 11.6794Z" fill="#CBD5E0"/>
+                  </svg>
+                </button>
+              </div>                  
+            </th>
+            <th class="bg-brand-gray-150">
+              <div class="flex items-center justify-between font-semibold gap-5 p-2 md:px-4 lg:p-4">
+                <span class="whitespace-nowrap">Base Royalty</span>
+                <button type="button">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.46055 2.31984C6.75848 2.0262 7.24152 2.0262 7.53945 2.31984L10.275 5.01602C10.7556 5.4897 10.4152 6.29961 9.73558 6.29961H4.26442C3.58476 6.29961 3.24438 5.4897 3.72498 5.01602L6.46055 2.31984Z" fill="#CBD5E0"/>
+                    <path d="M6.46055 11.6794C6.75848 11.973 7.24152 11.973 7.53945 11.6794L10.275 8.9832C10.7556 8.50952 10.4152 7.69961 9.73558 7.69961H4.26442C3.58476 7.69961 3.24438 8.50952 3.72498 8.9832L6.46055 11.6794Z" fill="#CBD5E0"/>
+                  </svg>
+                </button>
+              </div>                  
+            </th>
+            <th class="bg-brand-gray-150">
+              <div class="flex items-center justify-between font-semibold gap-5 p-2 md:px-4 lg:p-4">
+                <span class="whitespace-nowrap">Bonus Royalty</span>
+                <button type="button">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.46055 2.31984C6.75848 2.0262 7.24152 2.0262 7.53945 2.31984L10.275 5.01602C10.7556 5.4897 10.4152 6.29961 9.73558 6.29961H4.26442C3.58476 6.29961 3.24438 5.4897 3.72498 5.01602L6.46055 2.31984Z" fill="#CBD5E0"/>
+                    <path d="M6.46055 11.6794C6.75848 11.973 7.24152 11.973 7.53945 11.6794L10.275 8.9832C10.7556 8.50952 10.4152 7.69961 9.73558 7.69961H4.26442C3.58476 7.69961 3.24438 8.50952 3.72498 8.9832L6.46055 11.6794Z" fill="#CBD5E0"/>
+                  </svg>
+                </button>
+              </div>                  
+            </th>
+            <th class="bg-brand-gray-150">
+              <div class="flex items-center justify-between font-semibold gap-5 p-2 md:px-4 lg:p-4">
+                <span class="whitespace-nowrap">Total Royalty</span>
+                <button type="button">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.46055 2.31984C6.75848 2.0262 7.24152 2.0262 7.53945 2.31984L10.275 5.01602C10.7556 5.4897 10.4152 6.29961 9.73558 6.29961H4.26442C3.58476 6.29961 3.24438 5.4897 3.72498 5.01602L6.46055 2.31984Z" fill="#CBD5E0"/>
+                    <path d="M6.46055 11.6794C6.75848 11.973 7.24152 11.973 7.53945 11.6794L10.275 8.9832C10.7556 8.50952 10.4152 7.69961 9.73558 7.69961H4.26442C3.58476 7.69961 3.24438 8.50952 3.72498 8.9832L6.46055 11.6794Z" fill="#CBD5E0"/>
+                  </svg>
+                </button>
+              </div>                  
+            </th>
+            <th class="bg-brand-gray-150">
+              <div class="flex items-center justify-between font-semibold gap-5 p-2 md:px-4 lg:p-4">
+                <span class="whitespace-nowrap">Earnings to date</span>
+                <button type="button">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.46055 2.31984C6.75848 2.0262 7.24152 2.0262 7.53945 2.31984L10.275 5.01602C10.7556 5.4897 10.4152 6.29961 9.73558 6.29961H4.26442C3.58476 6.29961 3.24438 5.4897 3.72498 5.01602L6.46055 2.31984Z" fill="#CBD5E0"/>
+                    <path d="M6.46055 11.6794C6.75848 11.973 7.24152 11.973 7.53945 11.6794L10.275 8.9832C10.7556 8.50952 10.4152 7.69961 9.73558 7.69961H4.26442C3.58476 7.69961 3.24438 8.50952 3.72498 8.9832L6.46055 11.6794Z" fill="#CBD5E0"/>
+                  </svg>
+                </button>
+              </div>                  
+            </th>
+            <th class="bg-brand-gray-150">
+              <div class="flex items-center justify-between font-semibold gap-5 p-2 md:px-4 lg:p-4">
+                <span class="whitespace-nowrap">Earning this month</span>
+                <button type="button">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.46055 2.31984C6.75848 2.0262 7.24152 2.0262 7.53945 2.31984L10.275 5.01602C10.7556 5.4897 10.4152 6.29961 9.73558 6.29961H4.26442C3.58476 6.29961 3.24438 5.4897 3.72498 5.01602L6.46055 2.31984Z" fill="#CBD5E0"/>
+                    <path d="M6.46055 11.6794C6.75848 11.973 7.24152 11.973 7.53945 11.6794L10.275 8.9832C10.7556 8.50952 10.4152 7.69961 9.73558 7.69961H4.26442C3.58476 7.69961 3.24438 8.50952 3.72498 8.9832L6.46055 11.6794Z" fill="#CBD5E0"/>
+                  </svg>
+                </button>
+              </div>                  
+            </th>
+            <th class="bg-brand-gray-150 rounded-r-lg">
+              <div class="font-bold text-brand-gray-500 p-2 md:px-4 lg:p-4 xl:px-10">
+                Status
+              </div>                  
+            </th>
+          </tr>
+          <tr class="font-semibold text-sm">
+            <td class="whitespace-nowrap border-b border-brand-gray-10 py-3 lg:py-5 px-2 md:px-4">1 Test elite sign up - 5</td>
+            <td class="border-b border-brand-gray-10 py-3 lg:py-5 px-2 md:px-4">50%</td>
+            <td class="border-b border-brand-gray-10 py-3 lg:py-5 px-2 md:px-4">0%</td>
+            <td class="border-b border-brand-gray-10 py-3 lg:py-5 px-2 md:px-4">50%</td>
+            <td class="border-b border-brand-gray-10 py-3 lg:py-5 px-2 md:px-4">$10.00</td>
+            <td class="border-b border-brand-gray-10 py-3 lg:py-5 px-2 md:px-4">$45.00</td>
+            <td class="text-center border-b border-brand-gray-10 py-3 lg:py-5 px-2 md:px-4">
+              <button type="button" class="font-bold inline-block text-display-xs text-brand-green-100 bg-brand-green-100/10 rounded-full uppercase py-1 px-3">Active</button>
+            </td>
+          </tr>
+          <tr class="font-semibold text-sm">
+            <td class="whitespace-nowrap border-b border-brand-gray-10 py-3 lg:py-5 px-2 md:px-4">1 Test elite sign up - 5</td>
+            <td class="border-b border-brand-gray-10 py-3 lg:py-5 px-2 md:px-4">50%</td>
+            <td class="border-b border-brand-gray-10 py-3 lg:py-5 px-2 md:px-4">0%</td>
+            <td class="border-b border-brand-gray-10 py-3 lg:py-5 px-2 md:px-4">50%</td>
+            <td class="border-b border-brand-gray-10 py-3 lg:py-5 px-2 md:px-4">$10.00</td>
+            <td class="border-b border-brand-gray-10 py-3 lg:py-5 px-2 md:px-4">$45.00</td>
+            <td class="text-center border-b border-brand-gray-10 py-3 lg:py-5 px-2 md:px-4">
+              <button type="button" class="font-bold inline-block text-display-xs text-brand-green-100 bg-brand-green-100/10 rounded-full uppercase py-1 px-3">Active</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="relative max-w-7xl mx-auto bg-white border border-brand-blue-300/15 shadow-5xl rounded-lg p-4 xl:p-8 mt-3 z-10">
+        <div class="grid md:grid-cols-2 gap-4 xl:gap-6 items-end">
+          <div>
+            <h3 class="font-medium text-xl/none xl:text-display-2xl/none text-brand-blue-500">Payment Details</h3>
+            <div class="flex items-center justify-between bg-brand-gray-150 rounded-lg p-4 xl:py-6 xl:px-7 mt-3 xl:mt-5">
+              <span class="font-light text-base xl:text-xl">Last Payment:</span>
+              <p class="font-bold text-xl/none xl:text-2xl text-transparent bg-clip-text bg-base">$0.00</p>
+            </div>
+          </div>
+          <div>
+            <button type="button" class="block font-medium text-right w-full text-sm xl:text-lg text-brand-blue-500 underline decoration-brand-blue-500 hover:decoration-white transition-colors">
+              Payment Details
+            </button>
+            <div class="flex items-center justify-between bg-brand-gray-150 rounded-lg p-4 xl:py-6 xl:px-7 mt-3 xl:mt-5">
+              <span class="font-light text-base xl:text-xl">Next Payment:</span>
+              <p class="font-bold text-xl/none xl:text-2xl text-transparent bg-clip-text bg-base">$9.98</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative max-w-7xl mx-auto bg-white border border-brand-blue-300/15 shadow-5xl rounded-lg p-4 xl:p-8 mt-3 z-10">
+        <div class="md:flex items-center justify-between md:space-x-1.5 space-y-2 md:space-y-0">
+          <div class="flex items-center space-x-1.5">
+            <h3 class="text-xl/none xl:text-display-2xl/none">Total Earnings</h3>
+            <span class="inline-block text-sm lg:text-base xl:text-lg">(Last 12 months)</span>
+          </div>
+          <button type="button" class="block font-medium  text-sm lg:text-base xl:text-lg text-brand-blue-500 underline decoration-brand-blue-500 hover:decoration-white transition-colors">
+            View Historical Date
+          </button>
+        </div>
+        <div class="h-28 md:h-40 lg:h-60 w-full mt-3 lg:mt-7 xl:mt-11">
+          <img src="/assets/img/chart.png" class="size-full object-contain" alt="Chart">
+        </div>
+      </div>
+      
+      <div class="relative max-w-7xl mx-auto grid md:grid-cols-2 text-brand-blue-500 gap-3.5 mt-3 z-10">
+          <div class="flex flex-col justify-between bg-white border border-brand-blue-300/15 shadow-5xl rounded-lg gap-5 xl:gap-8 p-4 xl:p-8">
+            <div>
+              <h3 class="font-medium text-xl/none xl:text-display-2xl/none text-brand-blue-500">Add Royalty Booster</h3>
+              <p class="text-sm lg:text-base opacity-70 mt-2.5">Bonus Royalties allow you you to earn more for each document sale.</p>
+              <div class="space-y-4 mt-6">
+                <div class="flex items-start gap-2">
+                  <span class="size-11 flex shrink-0 bg-brand-yellow-100 border border-brand-yellow-200 rounded-full">
+                    <svg class="size-6 m-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.7628 8.2312C18.6972 8.09039 18.556 8.00002 18.4004 8.00002H13.6604L18.3384 0.614016C18.4164 0.490828 18.4211 0.334828 18.3508 0.207234C18.2804 0.0792188 18.1459 0 18.0003 0H11.6004C11.4488 0 11.3103 0.0855937 11.2424 0.221203L5.24237 12.2212C5.18036 12.3448 5.18716 12.492 5.25995 12.61C5.33317 12.728 5.46156 12.8 5.60036 12.8H9.71355L5.23155 23.4448C5.15514 23.6268 5.22316 23.838 5.39153 23.9412C5.45631 23.9808 5.52831 24 5.59994 24C5.71473 24 5.82794 23.9507 5.90636 23.858L18.7064 8.65795C18.8067 8.5388 18.8283 8.37239 18.7628 8.2312Z" fill="#FFA500"/>
+                      </svg>                      
+                  </span>
+                  <div class="space-y-1.5">
+                    <h4 class="font-bold text-sm uppercase">multi-upload royalty booster</h4>
+                    <p class="text-xs opacity-70">
+                      List 3 or more Elite documents for sale and earn an additional 10% Bonus Royalty for all your documents.
+                    </p>
+                    <a href="#" class="block font-roboto font-medium text-xs text-transparent bg-clip-text bg-base uppercase">
+                      booster. this enable to document(s) more 2 upload
+                    </a>
+                  </div>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="size-11 flex shrink-0 bg-brand-yellow-100 border border-brand-yellow-200 rounded-full">
+                    <svg class="size-6 m-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.75 13.5H2.25C1.83579 13.5 1.5 13.8358 1.5 14.25V21.75C1.5 22.1642 1.83579 22.5 2.25 22.5H6.75C7.16421 22.5 7.5 22.1642 7.5 21.75V14.25C7.5 13.8358 7.16421 13.5 6.75 13.5Z" fill="#FFA500"/>
+                      <path d="M21.75 7.5H17.25C16.8358 7.5 16.5 7.83579 16.5 8.25V21.75C16.5 22.1642 16.8358 22.5 17.25 22.5H21.75C22.1642 22.5 22.5 22.1642 22.5 21.75V8.25C22.5 7.83579 22.1642 7.5 21.75 7.5Z" fill="#FFA500"/>
+                      <path d="M14.25 1.5H9.75C9.33579 1.5 9 1.83579 9 2.25V21.75C9 22.1642 9.33579 22.5 9.75 22.5H14.25C14.6642 22.5 15 22.1642 15 21.75V2.25C15 1.83579 14.6642 1.5 14.25 1.5Z" fill="#FFA500"/>
+                      </svg>
+                  </span>
+                  <div class="space-y-1.5">
+                    <h4 class="font-bold text-sm uppercase">high achiever royalty booster</h4>
+                    <p class="text-xs opacity-70">
+                      Did you earn over 80% for the subject you wrote your notes in? Verify your transcript for an additional 5% Bonus Royalty.
+                    </p>
+                    <a href="#" class="block font-roboto font-medium text-xs text-transparent bg-clip-text bg-base uppercase">
+                      1 documents eligible
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="font-roboto text-center bg-gradient-to-r from-brand-blue-10 to-brand-blue-20 text-white hover:to-brand-blue-10 hover:from-brand-blue-20 transition-colors rounded-lg py-2.5 xl:py-4 px-5 xl:px-8"> 
+              Edit Profile Details
+            </a>
+          </div>
+          <div class="flex flex-col justify-between bg-white border border-brand-blue-300/15 shadow-5xl rounded-lg gap-5 xl:gap-8 p-4 xl:p-8">
+            <div>
+              <h3 class="font-medium text-xl/none xl:text-display-2xl/none text-brand-blue-500">Need Assistance?</h3>
+              <p class="text-sm lg:text-base opacity-70 mt-2.5">Bonus Royalties allow you you to earn more for each document sale..</p>
+              <div class="space-y-4 mt-6">
+                <div class="flex items-start gap-2">
+                  <span class="size-11 flex shrink-0 bg-brand-yellow-100 border border-brand-yellow-200 rounded-full">
+                      <svg class="size-6 m-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_591_1723)">
+                        <path d="M20.6986 17.4149L20.6717 17.3831C19.7236 16.2604 18.5226 15.397 17.175 14.8408C15.7916 16.1351 13.9342 16.9285 11.8947 16.9285C9.88777 16.9285 8.05718 16.16 6.68099 14.9021C5.39186 15.4594 4.2424 16.3006 3.32828 17.3831L3.30118 17.4152C1.83026 19.157 1.08447 21.1351 1.08447 23.2945V24.0004H22.9154V23.2945C22.9154 21.1351 22.1697 19.157 20.6986 17.4149Z" fill="#FFA500"/>
+                        <path d="M4.38096 11.2941H4.44934H5.9299H5.93033C5.77141 10.8445 5.66195 10.3718 5.60863 9.88235H5.60901H10.9827V11.2941H5.93033C6.03522 11.591 6.16219 11.8775 6.30835 12.1523C6.77131 13.0244 7.44219 13.7842 8.24769 14.355C9.27894 15.0858 10.5372 15.5163 11.8947 15.5163C13.2667 15.5163 14.5378 15.077 15.5752 14.3318C16.2298 13.8601 16.7954 13.2653 17.229 12.5846C17.4853 12.1828 17.6977 11.7505 17.859 11.2942H17.8591H19.34H19.4667C20.3675 11.2942 21.1003 10.5614 21.1003 9.66057V9.17647C21.1003 4.11656 16.9837 0 11.9238 0C6.86388 0 2.74731 4.11656 2.74731 9.17647V9.66052C2.74736 10.5613 3.48021 11.2941 4.38096 11.2941ZM11.9238 1.41176C15.4714 1.41176 18.4704 3.80339 19.3945 7.05882H17.8474C16.9702 4.61864 14.6332 2.86875 11.8947 2.86875C9.15621 2.86875 6.81903 4.61864 5.94171 7.05882H4.45315C5.37724 3.80339 8.37626 1.41176 11.9238 1.41176Z" fill="#FFA500"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_591_1723">
+                        <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>                
+                  </span>
+                  <div class="space-y-1.5">
+                    <h4 class="font-bold text-sm uppercase">elite help centre</h4>
+                    <p class="text-xs opacity-70">
+                      Elite Uploaders have access to our private help centre. Here you can see articles to assist you with both operations and how to maximise your document sales.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="size-11 flex shrink-0 bg-brand-yellow-100 border border-brand-yellow-200 rounded-full">
+                      <svg class="size-6 m-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_591_1732)">
+                        <path d="M23.9999 16.2426C23.9999 13.2643 22.2913 10.6064 19.7324 9.31348C19.653 15.0238 15.0233 19.6534 9.31299 19.7329C10.6059 22.2918 13.2639 24.0004 16.2421 24.0004C17.6384 24.0004 18.9963 23.6285 20.1895 22.9219L23.966 23.9665L22.9214 20.1899C23.628 18.9968 23.9999 17.6389 23.9999 16.2426Z" fill="#FFA500"/>
+                        <path d="M18.3281 9.16406C18.3281 4.1109 14.2172 0 9.16406 0C4.1109 0 0 4.1109 0 9.16406C0 10.8109 0.438354 12.4144 1.27075 13.8221L0.0336914 18.2943L4.50604 17.0574C5.91376 17.8898 7.51721 18.3281 9.16406 18.3281C14.2172 18.3281 18.3281 14.2172 18.3281 9.16406ZM7.75781 7.03125H6.35156C6.35156 5.48035 7.61316 4.21875 9.16406 4.21875C10.715 4.21875 11.9766 5.48035 11.9766 7.03125C11.9766 7.81842 11.6433 8.57501 11.062 9.10675L9.86719 10.2003V11.2969H8.46094V9.58099L10.1125 8.06927C10.4077 7.79919 10.5703 7.4306 10.5703 7.03125C10.5703 6.2558 9.93951 5.625 9.16406 5.625C8.38861 5.625 7.75781 6.2558 7.75781 7.03125ZM8.46094 12.7031H9.86719V14.1094H8.46094V12.7031Z" fill="#FFA500"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_591_1732">
+                        <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>                
+                  </span>
+                  <div class="space-y-1.5">
+                    <h4 class="font-bold text-sm uppercase">priority customer support</h4>
+                    <p class="text-xs opacity-70">
+                      Elite Uploaders are given priority customer support to assist you with inquires related to your Elite Uploader account.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="font-roboto text-center bg-gradient-to-r from-brand-blue-10 to-brand-blue-20 text-white hover:to-brand-blue-10 hover:from-brand-blue-20 transition-colors rounded-lg py-2.5 xl:py-4 px-5 xl:px-8"> 
+              Go to the Elite Help Centre
+            </a>
+          </div>
+      </div>
+
+  </main>
+
+  <footer class="bg-white border-t border-black/15 px-4 py-5">
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between font-roboto text-brand-blue-700 gap-4 text-sm">
+      <div class="flex justify-center flex-wrap items-center gap-2 xl:gap-7 uppercase">
+        <a href="#">blog</a>
+        <a href="#">Pricing</a>
+        <a href="#">About</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy</a>
+        <a href="#">Help</a>
+      </div>
+      <p>© Copyright 2023, All Rights Reserved</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -6,6 +6,7 @@ tailwind.config = {
         'roboto':['Roboto']
       },
       fontSize:{
+        "display-xs":['.625rem', "1rem"],
         'display-2xl':['1.75rem',],
         'display-3xl':['2rem', '2.4rem'],
         'display-4xl':['2.625rem'],
@@ -14,6 +15,9 @@ tailwind.config = {
       colors:{
         brand:{
           blue:{
+            10:"#457EF8",
+            20:"#5E69DF",
+            50:"#111827",
             100:"#313A7A",
             200:"#0C0D1B",
             300:"#5B6CE3",
@@ -39,11 +43,18 @@ tailwind.config = {
             100:"#FFEBEB",
             500:"#FF2C2C",
           },
-          green:"#3FC044"
+          yellow:{
+            100:"#FFF9ED",
+            200:"#FFA500",
+          },
+          green:"#3FC044",
+          'green-100':"#2DAE00"
+          
         }
       },
       boxShadow:{
-        '4xl':"0px 3px 4px 0px #5B6CE3"
+        '4xl':"0px 3px 4px 0px #5B6CE3",
+        '5xl':"0px 1px 0.1px 0px rgba(0, 0, 0, 0.25)"
       },
       backgroundImage:{
         'base':"linear-gradient(90deg, #457EF8 -8.46%, #5E69DF 113.08%)"
