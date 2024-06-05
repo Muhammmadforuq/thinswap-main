@@ -16,7 +16,6 @@ tailwind.config = {
         brand:{
           blue:{
             10:"#457EF8",
-            20:"#5E69DF",
             50:"#111827",
             100:"#313A7A",
             200:"#0C0D1B",
@@ -57,7 +56,8 @@ tailwind.config = {
         '5xl':"0px 1px 0.1px 0px rgba(0, 0, 0, 0.25)"
       },
       backgroundImage:{
-        'base':"linear-gradient(90deg, #457EF8 -8.46%, #5E69DF 113.08%)"
+        'base':"linear-gradient(90deg, #457EF8 -8.46%, #5E69DF 113.08%)",
+        "gr":"linear-gradient(90deg, #07123F -8.46%, #5E69DF 113.08%)"
       },
     },
   }
