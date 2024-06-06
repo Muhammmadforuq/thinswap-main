@@ -9,7 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="/tailwind.config.js"></script>
-  <title>Thinswap || Edit Profile</title>
+  <title>Thinswap || Order Completed</title>
 </head>
 <body>
   <header class="py-3.5 px-4">
@@ -111,8 +111,7 @@
      </div>
     </div>
   </header>
-  <main class="relative bg-brand-gray-20 after:absolute after:left-0 after:w-full after:top-0 after:h-64 xl:after:h-96 after:bg-brand-blue-500 after
-  :z-0 px-4 pb-9">
+  <main class="relative bg-brand-gray-20 after:absolute after:left-0 after:w-full after:top-0 after:h-64 xl:after:h-96 after:bg-brand-blue-500 after:z-0 px-4 pb-16">
       <!-- hero -->
       <div class="relative max-w-7xl w-full mx-auto pt-7 z-10">
         <!-- buttons -->
@@ -125,14 +124,14 @@
             <span class="whitespace-nowrap">Upload Documents</span>
           </button>
           <!-- Buy Exchange Credits -->
-          <button type="button" class="relative flex items-center text-white/70 fill-transparent after:absolute after:inset-x-0 after:bottom-0 after:w-full after:h-0.5 lg:after:h-1 gap-2 pb-3 px-4 lg:px-6 xl:px-10">
+          <button type="button" class="relative flex items-center text-white fill-transparent after:absolute after:inset-x-0 after:bottom-0 after:w-full after:bg-base after:h-0.5 lg:after:h-1 gap-2 pb-3 px-4 lg:px-6 xl:px-10">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14.0003 8.16653C19.155 8.16653 23.3337 12.3452 23.3337 17.4999C23.3337 22.6546 19.155 26.8332 14.0003 26.8332C8.84567 26.8332 4.66699 22.6546 4.66699 17.4999C4.66699 12.3452 8.84567 8.16653 14.0003 8.16653ZM14.0003 10.4999C10.1343 10.4999 7.00033 13.6339 7.00033 17.4999C7.00033 21.3659 10.1343 24.4999 14.0003 24.4999C17.8663 24.4999 21.0003 21.3659 21.0003 17.4999C21.0003 13.6339 17.8663 10.4999 14.0003 10.4999ZM14.0003 12.2499L15.5432 15.3762L18.9934 15.8775L16.4969 18.3111L17.0862 21.7472L14.0003 20.1249L10.9145 21.7472L11.5038 18.3111L9.00728 15.8775L12.4574 15.3762L14.0003 12.2499ZM21.0003 2.3332V5.8332L19.4097 7.16035C18.1192 6.48386 16.6866 6.04186 15.1683 5.89094L15.167 2.33203L21.0003 2.3332ZM12.8337 2.33203L12.8333 5.89083C11.3151 6.04161 9.88253 6.48345 8.59214 7.15975L7.00033 5.8332V2.3332L12.8337 2.33203Z" fill="currentColor"/>
               </svg>                                         
             <span class="whitespace-nowrap">Buy Exchange Credits</span>
           </button>
           <!-- Elite Dashboard -->
-          <button type="button" class="relative flex items-center text-white fill-transparent after:absolute after:inset-x-0 after:bottom-0 after:w-full after:bg-base after:h-0.5 lg:after:h-1 gap-2 pb-3 px-4 lg:px-6 xl:px-10">
+          <button type="button" class="relative flex items-center text-white/70 fill-transparent after:absolute after:inset-x-0 after:bottom-0 after:w-full after:h-0.5 lg:after:h-1 gap-2 pb-3 px-4 lg:px-6 xl:px-10">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4.66675 25.6667C4.66675 20.5121 8.84542 16.3334 14.0001 16.3334C19.1548 16.3334 23.3334 20.5121 23.3334 25.6667H4.66675ZM15.1667 18.7636V23.3334H20.6018C19.7661 20.9692 17.6965 19.1879 15.1667 18.7636ZM12.8334 23.3334V18.7636C10.3037 19.1879 8.23402 20.9692 7.39839 23.3334H12.8334ZM14.0001 15.1667C10.1326 15.1667 7.00008 12.0342 7.00008 8.16675C7.00008 4.29925 10.1326 1.16675 14.0001 1.16675C17.8676 1.16675 21.0001 4.29925 21.0001 8.16675C21.0001 12.0342 17.8676 15.1667 14.0001 15.1667ZM14.0001 12.8334C16.5789 12.8334 18.6667 10.7456 18.6667 8.16675C18.6667 5.58791 16.5789 3.50008 14.0001 3.50008C11.4212 3.50008 9.33341 5.58791 9.33341 8.16675C9.33341 10.7456 11.4212 12.8334 14.0001 12.8334Z" fill="currentColor"/>
               </svg>
@@ -150,96 +149,38 @@
       </div>
       
       <!-- Upload to thinkswap -->
-      <div class="relative max-w-7xl w-full mx-auto bg-white border border-brand-blue-300/15 rounded-lg px-3 lg:px-6 xl:pl-12 xl:pr-9 py-5 lg:py-7 xl:pb-16 mt-5 xl:mt-9 z-10">
-        <form class="grid md:grid-cols-2 gap-4 lg:gap-6 mt-4">
-            <div class="space-y-4 xl:space-y-7">
-              <h3 class="font-medium text-xl/none xl:text-display-2xl/none text-brand-blue-500">Edit Profile</h3>
-              <div class="text-sm xl:text-base/5 space-y-2 xl:space-y-4">
-                <!-- image -->
-                <div class="space-y-2">
-                  <label for="image" class="block">
-                    Upload Profile Picture
-                    <svg class="inline-block" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7.00033 12.8337C3.77866 12.8337 1.16699 10.222 1.16699 7.00033C1.16699 3.77866 3.77866 1.16699 7.00033 1.16699C10.222 1.16699 12.8337 3.77866 12.8337 7.00033C12.8337 10.222 10.222 12.8337 7.00033 12.8337ZM7.00033 11.667C9.57767 11.667 11.667 9.57767 11.667 7.00033C11.667 4.423 9.57767 2.33366 7.00033 2.33366C4.423 2.33366 2.33366 4.423 2.33366 7.00033C2.33366 9.57767 4.423 11.667 7.00033 11.667ZM6.41699 4.08366H7.58366V5.25033H6.41699V4.08366ZM6.41699 6.41699H7.58366V9.91699H6.41699V6.41699Z" fill="#1B2344" fill-opacity="0.53"/>
-                      </svg>                      
-                  </label>            
-                    <label for="image" class="block text-brand-blue-400 text-center underline border border-dashed border-brand-blue-400 rounded-lg cursor-pointer p-2 lg:p-2.5">
-                      <a href="#">Browse Image</a>
-                    </label>
-                    <input type="file" id="image" class="hidden">
-                </div>
-                <!-- color -->
-                <div class="space-y-2">
-                  <label for="color" class="block">
-                    Color
-                    <svg class="inline-block" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7.00033 12.8337C3.77866 12.8337 1.16699 10.222 1.16699 7.00033C1.16699 3.77866 3.77866 1.16699 7.00033 1.16699C10.222 1.16699 12.8337 3.77866 12.8337 7.00033C12.8337 10.222 10.222 12.8337 7.00033 12.8337ZM7.00033 11.667C9.57767 11.667 11.667 9.57767 11.667 7.00033C11.667 4.423 9.57767 2.33366 7.00033 2.33366C4.423 2.33366 2.33366 4.423 2.33366 7.00033C2.33366 9.57767 4.423 11.667 7.00033 11.667ZM6.41699 4.08366H7.58366V5.25033H6.41699V4.08366ZM6.41699 6.41699H7.58366V9.91699H6.41699V6.41699Z" fill="#1B2344" fill-opacity="0.53"/>
-                      </svg>                      
-                  </label>            
-                    <input type="text" value="#1232123" id="color" aria-label="disabled input" class="bg-brand-gray-20 text-brand-blue-500/50 text-sm xl:text-base/5 border border-brand-blue-500/25 rounded-lg block w-full cursor-not-allowed p-2 lg:p-2.5" disabled>
-                </div>
-                <!-- Alias -->
-                <div class="space-y-2">
-                  <label for="myemail" class="block">
-                    Alias
-                    <svg class="inline-block" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7.00033 12.8337C3.77866 12.8337 1.16699 10.222 1.16699 7.00033C1.16699 3.77866 3.77866 1.16699 7.00033 1.16699C10.222 1.16699 12.8337 3.77866 12.8337 7.00033C12.8337 10.222 10.222 12.8337 7.00033 12.8337ZM7.00033 11.667C9.57767 11.667 11.667 9.57767 11.667 7.00033C11.667 4.423 9.57767 2.33366 7.00033 2.33366C4.423 2.33366 2.33366 4.423 2.33366 7.00033C2.33366 9.57767 4.423 11.667 7.00033 11.667ZM6.41699 4.08366H7.58366V5.25033H6.41699V4.08366ZM6.41699 6.41699H7.58366V9.91699H6.41699V6.41699Z" fill="#1B2344" fill-opacity="0.53"/>
-                      </svg>                      
-                  </label>            
-                    <input type="email" value="@emanuelawdqweahsd" id="myemail" aria-label="disabled input" class="bg-brand-gray-20 text-brand-blue-500/50 text-sm xl:text-base/5 border border-brand-blue-500/25 rounded-lg block w-full cursor-not-allowed p-2 lg:p-2.5" disabled>
-                </div>
-                <!-- Name -->
-                <div class="grid lg:grid-cols-2 gap-5">
-                <!-- First Name -->
-                  <div class="space-y-2">
-                    <label for="first_name" class="block">
-                      First Name
-                      <svg class="inline-block" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.00033 12.8337C3.77866 12.8337 1.16699 10.222 1.16699 7.00033C1.16699 3.77866 3.77866 1.16699 7.00033 1.16699C10.222 1.16699 12.8337 3.77866 12.8337 7.00033C12.8337 10.222 10.222 12.8337 7.00033 12.8337ZM7.00033 11.667C9.57767 11.667 11.667 9.57767 11.667 7.00033C11.667 4.423 9.57767 2.33366 7.00033 2.33366C4.423 2.33366 2.33366 4.423 2.33366 7.00033C2.33366 9.57767 4.423 11.667 7.00033 11.667ZM6.41699 4.08366H7.58366V5.25033H6.41699V4.08366ZM6.41699 6.41699H7.58366V9.91699H6.41699V6.41699Z" fill="#1B2344" fill-opacity="0.53"/>
-                        </svg>                      
-                    </label>            
-                      <input type="email" value="Emamneul" id="first_name" aria-label="disabled input" class="bg-brand-gray-20 text-brand-blue-500/50 text-sm xl:text-base/5 border border-brand-blue-500/25 rounded-lg block w-full cursor-not-allowed p-2 lg:p-2.5" disabled>
-                  </div>
-                  <!-- Lasr Name -->
-                  <div class="space-y-2">
-                    <label for="last_name" class="block">
-                      Last Name
-                      <svg class="inline-block" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.00033 12.8337C3.77866 12.8337 1.16699 10.222 1.16699 7.00033C1.16699 3.77866 3.77866 1.16699 7.00033 1.16699C10.222 1.16699 12.8337 3.77866 12.8337 7.00033C12.8337 10.222 10.222 12.8337 7.00033 12.8337ZM7.00033 11.667C9.57767 11.667 11.667 9.57767 11.667 7.00033C11.667 4.423 9.57767 2.33366 7.00033 2.33366C4.423 2.33366 2.33366 4.423 2.33366 7.00033C2.33366 9.57767 4.423 11.667 7.00033 11.667ZM6.41699 4.08366H7.58366V5.25033H6.41699V4.08366ZM6.41699 6.41699H7.58366V9.91699H6.41699V6.41699Z" fill="#1B2344" fill-opacity="0.53"/>
-                        </svg>                      
-                    </label>            
-                      <input type="email" value="Emamneul" id="last_name" aria-label="disabled input" class="bg-brand-gray-20 text-brand-blue-500/50 text-sm xl:text-base/5 border border-brand-blue-500/25 rounded-lg block w-full cursor-not-allowed p-2 lg:p-2.5" disabled>
-                  </div>
-                </div>
-                <!-- Bio -->
-                <div class="space-y-2">
-                  <label for="bio" class="block">
-                    Alias
-                    <svg class="inline-block" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7.00033 12.8337C3.77866 12.8337 1.16699 10.222 1.16699 7.00033C1.16699 3.77866 3.77866 1.16699 7.00033 1.16699C10.222 1.16699 12.8337 3.77866 12.8337 7.00033C12.8337 10.222 10.222 12.8337 7.00033 12.8337ZM7.00033 11.667C9.57767 11.667 11.667 9.57767 11.667 7.00033C11.667 4.423 9.57767 2.33366 7.00033 2.33366C4.423 2.33366 2.33366 4.423 2.33366 7.00033C2.33366 9.57767 4.423 11.667 7.00033 11.667ZM6.41699 4.08366H7.58366V5.25033H6.41699V4.08366ZM6.41699 6.41699H7.58366V9.91699H6.41699V6.41699Z" fill="#1B2344" fill-opacity="0.53"/>
-                      </svg>                      
-                  </label>            
-                    <textarea name="" placeholder="Description" id="bio" class="h-32 xl:h-48 resize-none bg-brand-gray-20 text-brand-blue-500/50 text-sm xl:text-base/5 border border-brand-blue-500/25 rounded-lg block w-full cursor-not-allowed p-2 lg:p-2.5" disabled></textarea>
-                </div>
-              </div>
-            </div>
-            <div class="order-first md:order-none space-y-4 xl:space-y-7">
-              <h3 class="font-medium text-xl/none xl:text-display-2xl/none text-brand-blue-500">Edit Profile</h3>
-              <div class="flex flex-col items-center justify-center text-center bg-brand-gray-20 border border-brand-blue-500/25 rounded-lg py-10 md:py-20 xl:pt-36 xl:pb-24 px-5">
-                <div class="size-24 lg:size-32 xl:size-40 rounded-full overflow-hidden"> 
-                  <img src="/assets/img/man.png" class="size-full object-cover" alt="Man">
-                </div>
-                <h3 class="font-bold text-xl/6 lg:text-[28px]/none mt-2 lg:mt-5">Emmanuel Elite Signup</h3>
-                <a href="mailto:@elitesignupacu" class="inline-block text-brand-blue-400 text-base/5 xl:text-xl mt-3">@elitesignupacu</a>
-                <p class="text-sm lg:text-base xl:text-xl text-brand-blue-500 border-t border-brand-blue-500/15 pt-2 lg:pt-5 mt-2 lg:mt-5">
-                  I am the smartest kid in the world.
-                </p>
-              </div>
-            </div>
+      <div class="relative max-w-7xl w-full mx-auto bg-white border border-brand-blue-300/15 rounded-lg px-3 py-5 md:py-8 lg:py-20 mt-5 xl:mt-9 z-10">
+        <div class="max-w-xl mx-auto text-center">
+          <svg class="size-10 xl:size-16 mx-auto" width="67" height="66" viewBox="0 0 67 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="33.3266" cy="32.8273" r="25.9389" fill="white"/>
+            <path d="M33.5 66C15.2746 66 0.5 51.2252 0.5 33C0.5 14.7746 15.2746 0 33.5 0C51.7252 0 66.5 14.7746 66.5 33C66.5 51.2252 51.7252 66 33.5 66ZM30.2086 46.2L53.5432 22.8655L48.8764 18.1986L30.2086 36.8663L20.8749 27.5322L16.208 32.1994L30.2086 46.2Z" fill="#5B6CE3"/>
+          </svg>
+          <h2 class="font-semibold text-xl lg:text-3xl xl:text-4xl mt-2.5 lg:mt-5">Order Completed Successfully</h2>
+          <p class="text-sm text-brand-blue-500/70 mt-1 lg:mt-2.5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare
+          </p>
           
-        </form>
+          <div class="border-t-2 border-brand-blue-100/5 space-y-2 pt-4 xl:pt-8 mt-5 xl:mt-9 mx-3 md:mx-10 xl:mx-24">
+            <p class="text-sm text-brand-blue-500">Remaining Credits</p>
+            <a href="#" class="block font-medium lg:text-lg xl:text-2xl text-brand-blue-300">10 Total Exchange Credit</a>
+          </div>
+        </div>       
+        
       </div>
 
+      <div class="max-w-2xl mx-auto text-center lg:px-9 mt-5 lg:mt-10 xl:mt-16">
+        <div class="h-48 lg:h-64 xl:h-80 py-2">
+          <img class="size-full object-contain bg-brand-gray-20" src="/assets/img/science.png" alt="science">
+        </div>
+        <div class="space-y-2 lg:space-y-5 mt-2.5 lg:mt-5">
+          <h2 class="font-semibold text-xl lg:text-3xl xl:text-4xl text-brand-blue-500">Study Now!</h2>
+          <p class="text-sm text-brand-blue-500/70">
+            Thank you for being part of Australia's largest online student community. We hope you enjoy using the platform and consider uploading documents to Thinkswap to keep this bustling marketplace alive.
+          </p>
+          <button type="button" class="text-white text-sm xl:text-base/6 bg-brand-blue-300 hover:bg-brand-blue-500 transition-colors rounded-lg py-2 lg:py-3.5 px-9">Proceed to my library</button>
+        </div>
+      </div>
+    
   </main>
 
   <footer class="bg-white border-t border-black/15 px-4 py-5">
