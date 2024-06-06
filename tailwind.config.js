@@ -28,6 +28,7 @@ tailwind.config = {
             10:"#F1F2F4",
             20:"#FAFAFF",
             30:"#F3F4FA",
+            40:"#959CB8",
             50:"#F9FAFF",
             60:"#DCDEEA",
             100:"#f7f8fd",
@@ -35,7 +36,8 @@ tailwind.config = {
             200:"#56586F",
             300:"#F7F8FF",
             400:"#D7D8DE",
-            500:"#687588"
+            500:"#687588",
+            600:"#DCDCDC",
           },
           red:{
             100:"#FFEBEB",

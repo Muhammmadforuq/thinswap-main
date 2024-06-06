@@ -182,3 +182,25 @@ var swiper2 = new Swiper(".mySwiper2", {
     swiper: swiper,
   },
 });
+
+var swiper = new Swiper(".material", {
+  slidesPerView: 1,
+  spaceBetween: 8,
+  pagination: {
+    el: ".swiper-p-material",
+    // clickable: true,
+  },
+  navigation: {
+    nextEl: ".next",
+    prevEl: ".prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+      
+    },
+  },
+});
